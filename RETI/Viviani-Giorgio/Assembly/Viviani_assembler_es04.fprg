@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Viviani_assembler_es04"/>
+        <attribute name="authors" value="giorg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-16 09:13:51 PM"/>
+        <attribute name="created" value="Z2lvcmc7REVTS1RPUC0zSVY5N0U2OzIwMjUtMTEtMTY7MDk6MTA6NTUgUE07Mjg0Ng=="/>
+        <attribute name="edited" value="Z2lvcmc7REVTS1RPUC0zSVY5N0U2OzIwMjUtMTEtMTY7MDk6MTM6NTEgUE07MTsyOTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, sum, prd" type="Integer" array="False" size=""/>
+            <assign variable="prd" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="a" expression="13"/>
+            <assign variable="b" expression="12"/>
+            <if expression="a-b == 0">
+                <then>
+                    <assign variable="prd" expression="a*b"/>
+                </then>
+                <else>
+                    <assign variable="sum" expression="a+b"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
