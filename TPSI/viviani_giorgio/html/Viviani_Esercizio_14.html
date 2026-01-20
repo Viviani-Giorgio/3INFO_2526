@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES 14</title>
+</head>
+<body>
+ <form>
+<input type="text" id="idnome" name="nome" placeholder="Nome">
+<input type="text" id="idcognome" name="cognome" placeholder="Cognome">
+ 
+
+<label for="idbutton">Premi il pulsante</label>
+<input type="button" id="idbutton" value="Toccami">
+
+<h3>OS:</h3><br>
+
+  <input type="radio" id="OS1" name="Operative sistem" value="Linux">
+  <label for="OS1">  Linux</label><br>  
+  <input type="radio" id="OS2" name="Operative sistem" value="Windows">
+  <label for="OS2">  Windows</label><br>
+  <input type="radio" id="OS3" name="Operative sistem" value="MAC">
+  <label for="OS3"> MAC</label><br><br>
+
+
+<h3>RAM:</h3><br>
+
+  <input type="checkbox" id="DDR1" name="memory" value="DDR1">
+  <label for="DDR1">  DDR1</label><br>
+  <input type="checkbox" id="DDR2" name="memory" value="DDR2">
+  <label for="DDR2">  DDR2</label><br>
+  <input type="checkbox" id="DDR3" name="memory" value="DDR3">
+  <label for="DDR3"> DDR3</label><br>
+  <input type="checkbox" id="DDR4" name="memory" value="DDR4">
+  <label for="DDR4">  DDR4</label><br>
+  <input type="checkbox" id="DDR5" name="memory" value="DDR5">
+  <label for="DDR5">  DDR5</label><br>
+
+<h3>Quando hai comprato la tua RAM</h3><br>
+
+  <input type="date" id="iddata" name="RAM"><br><br>
+
+
+<h3>Altezza (cm)</h3>
+  <input type="number" id="altezza" name="altezza" min="140" max="200"><br><br>
+
+
+  <h3>Anni (in Anni)</h3>
+  <input type="number" id="Anni" name="anni" min="1" max="106"><br><br>
+
+
+<h3>Numero da 1 a 10: </h3>
+<input type="number" id="Num" name="Num" min="1" max="10"><br><br>
+
+<h3>Numero da 11 a 20: </h3>
+<input type="number" id="Num" name="Num" min="11" max="20"><br><br>
+
+<h3>Numero da 21 a 30: </h3>
+<input type="number" id="Num" name="Num" min="21" max="30"><br><br>
+
+
+<h3>Colore preferito</h3><br>
+
+   <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br><br>
+
+   
+    <label for="peso">Peso: </label>
+    <input type="range" min="50" max="100" value="60" class="slider" id="peso"><br><br><br>
+
+    
+        <label for="Numero familiari">Numero familiari (2 a 8) </label>
+        <input type="range" min="2" max="8" value="2" class="slider" id="Numero familiari"><br><br><br>
+      
+  
+        <label for="Datti un voto">Datti un voto (1 a 10) </label>
+        <input type="range" min="1" max="10" value="2" class="slider" id="Voto"><br><br><br>
+
+
+
+    <label for="cars">scegli fra questi marchi automobilistici:  </label>
+      <select name="marchio" id="cars">
+          <option value="marchio">toyota</option>
+          <option value="marchio">chevrolet</option>
+          <option value="marchio">pontiac</option>
+          <option value="marchio">nissan</option>
+          <option value="marchio">nissan (nismo)</option>
+          <option value="marchio">subaru</option>
+          <option value="marchio">lincoln</option>
+          <option value="marchio">italdesign</option>
+          <option value="marchio">bugatti</option>
+          <option value="marchio">W Motors</option>
+      </select><br><br>
+
+      
+        <br><label for="nazioni">Nazionalità: </label><br>
+        <input list="nations" name="nazioni" id="nazioni">
+        <datalist id="nations">
+            <option value="Albanese">
+            <option value="Argentina">
+            <option value="Belga">
+            <option value="Biellorussa">
+            <option value="Italiana">
+        </datalist><br><br><br><br>
+      
+        
+            <label for="bio">Scrivi qualcosa su di te:</label>
+            <textarea id="bio" name="bio" rows="6" cols="60" placeholder="Scrivi qualcosa su di te"></textarea>    
+          
+    </form><br><br>
+
+</body>
+</html>
