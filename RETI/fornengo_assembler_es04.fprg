@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 11:08:24 AM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC01RVMySEgzOzIwMjUtMTEtMTU7MTE6MDM6MTEgQU07Mjc3NQ=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC01RVMySEgzOzIwMjUtMTEtMTU7MTE6MDg6MjQgQU07MTsyODky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, r" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a == b">
+                <then>
+                    <assign variable="r" expression="a * b"/>
+                </then>
+                <else>
+                    <assign variable="r" expression="a + b"/>
+                </else>
+            </if>
+            <output expression="r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

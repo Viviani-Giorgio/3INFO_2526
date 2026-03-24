@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 10:25:50 AM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC01RVMySEgzOzIwMjUtMTEtMTU7MTA6MDY6MDIgQU07Mjc3Nw=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC01RVMySEgzOzIwMjUtMTEtMTU7MTA6MjU6NTAgQU07MTsyODg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, r" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="r" expression="2*a + 3*b - c"/>
+            <output expression="r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
