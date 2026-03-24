@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="nocera_assembler_es02"/>
+        <attribute name="authors" value="masterchips"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 11:52:51 AM"/>
+        <attribute name="created" value="bWFzdGVyY2hpcHM7QVJDSDsyMDI1LTExLTE1OzExOjQ2OjMzIEFNOzI3Mzc="/>
+        <attribute name="edited" value="bWFzdGVyY2hpcHM7QVJDSDsyMDI1LTExLTE1OzExOjUyOjUxIEFNOzE7Mjg0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, calc" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <assign variable="calc" expression="A+A+B+B+B-C"/>
+            <output expression="calc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

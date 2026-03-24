@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="nocera_assembler_es04"/>
+        <attribute name="authors" value="masterchips"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 12:27:20 PM"/>
+        <attribute name="created" value="bWFzdGVyY2hpcHM7QVJDSDsyMDI1LTExLTE1OzEyOjI0OjMwIFBNOzI3NDY="/>
+        <attribute name="edited" value="bWFzdGVyY2hpcHM7QVJDSDsyMDI1LTExLTE1OzEyOjI3OjIwIFBNOzE7Mjg1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, s, p" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <if expression="A==B">
+                <then>
+                    <assign variable="p" expression="A*B"/>
+                    <output expression="p" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="s" expression="A+B"/>
+                    <output expression="s" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

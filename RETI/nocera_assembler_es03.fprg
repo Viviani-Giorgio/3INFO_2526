@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="nocera_assembler_es03"/>
+        <attribute name="authors" value="masterchips"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 12:18:42 PM"/>
+        <attribute name="created" value="bWFzdGVyY2hpcHM7QVJDSDsyMDI1LTExLTE1OzEyOjEzOjM2IFBNOzI3NTA="/>
+        <attribute name="edited" value="bWFzdGVyY2hpcHM7QVJDSDsyMDI1LTExLTE1OzEyOjE4OjQyIFBNOzE7Mjg2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, ipo" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <assign variable="ipo" expression="(A*B)/2"/>
+            <output expression="ipo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
