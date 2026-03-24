@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iscrizione studente</title>
+    </head>
+    <body align="middle">
+        <h1 align="middle">Iscrizione studente</h1>
+        <form>
+            <h3>Dati personali</h3>
+            <label for="idnomecognome">Nome e Cognome: </label>
+            <input type="text" id="idnomecognome" name="boh" size="50" maxlength="50">
+            <h3>Sesso</h3>
+            <input type="radio" id="maschio" name="sesso">
+            <label for="maschio">Maschio</label><br>
+            <input type="radio" id="femmina" name="sesso">
+            <label for="femmina">Femmina</label><br>
+            <br>
+            <label for="universita'">Università :</label>
+            <select name="universita'" id="universita'">
+                <option hidden disabled selected value> -- Seleziona un'università --</option>
+                <option value="Roma tre">Roma tre</option>
+                <option value="Tor vergata">Tor vergata</option>
+                <option value="Foro italico">Foro italico</option>
+            </select><br><br><br>
+            <label for="cap">CAP: </label>
+            <input type="text" id="cap" name="cap" size="5" maxlength="5"> <br><br><br>
+            <input type="checkbox" id="studentelavoratore" name="studentelavoratore"> 
+            <label for="studentelavoratore">Studente e lavoratore</label><br><br><br>
+            <label for="descrizione"></label>
+            <textarea id="descrizione" name="descrizione" maxlength="80" size="80" placeholder="Descrizione del lavoro svolto:"></textarea><br><br>
+            <label for="idbutton"></label>
+            <input type="submit" id="idbutton" value="invia">
+            <label for="idbutton1"></label>
+            <input type="reset" id="idbutton1" value="reset">
+        </form>
+    </body>
+</html>
