@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="battaglia"/>
+        <attribute name="authors" value="Luca"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-16 07:46:13 "/>
+        <attribute name="created" value="THVjYTtERVNLVE9QLUtCQkJRTTg7MjAyNS0xMS0xNjsiMDc6Mzk6MjcgIjsyNjYw"/>
+        <attribute name="edited" value="THVjYTtERVNLVE9QLUtCQkJRTTg7MjAyNS0xMS0xNjsiMDc6NDY6MTMgIjsyOzI3NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, OP" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="2"/>
+            <assign variable="B" expression="4"/>
+            <assign variable="C" expression="6"/>
+            <assign variable="OP" expression="(2*A)+(3*B)-C"/>
+            <output expression="OP" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
