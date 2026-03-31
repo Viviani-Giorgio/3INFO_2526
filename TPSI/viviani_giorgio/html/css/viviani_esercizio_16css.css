@@ -1,0 +1,40 @@
+
+#bck1 {
+    background-image: url("../img/Senza_titolo.jpg");
+    height: 200px; 
+    width: 200px;
+    border: 10px;
+}
+
+#bck2{
+    background-image: url("https://static.wikitide.net/wikionewiki/1/1a/Gianmarco_Tocco.jpg");
+    width: 480px;
+    height: 490px;
+}
+
+#bck3{
+    background-image: url("../img/Senza_titolo.jpg");
+    height: 200px;
+    width: 1200px;
+    background-repeat: repeat;
+}
+
+#bck4{
+    background-image: url("../img/Senza_titolo.jpg");
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+}
+#bck5{
+    background-image: url("../img/Senza_titolo.jpg");
+    height: 200px;
+    width: 1300px;
+    background-repeat: repeat-x;
+}
+
+#bck6{
+    background-image: url("../img/Senza_titolo.jpg");
+    height: 1200px;
+    width: 200px;
+    background-repeat: repeat-y;
+}
