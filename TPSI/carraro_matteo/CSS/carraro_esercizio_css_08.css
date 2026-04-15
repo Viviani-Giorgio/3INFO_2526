@@ -1,0 +1,29 @@
+h1,h2,h3 {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+}
+
+p {
+    color: blue;
+    text-align: left;
+}
+
+.a {
+    color: darkgray;
+}
+#gh{
+    color: green;
+}
+#gs{
+    color: red;
+    text-align: right;
+}
+
+.d{ background-color: black;
+    height: 10px;
+}
+
+.p{background-color: red;
+    height: 3px; 
+}
