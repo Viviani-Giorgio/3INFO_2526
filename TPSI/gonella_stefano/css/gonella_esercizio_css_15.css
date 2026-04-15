@@ -1,0 +1,25 @@
+#ste{
+    background-color: red;
+    width: 400px;
+    height: 200px;
+}
+#ste1{
+    background-color: blueviolet;
+    width: calc(100%/4);
+    height: 150px;
+}
+#ste2{
+    background-color: blueviolet;
+    width: calc(100%/2);
+    height: 150px;
+}
+#ste3{
+    background-color: blueviolet;
+    width: 75%;
+    height: 150px;
+}
+#ste4{
+    background-color: blueviolet;
+    width: 100%;
+    height: 150px;
+}
