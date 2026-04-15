@@ -1,0 +1,45 @@
+#parent{
+    width:400px;
+    height: 200px;
+    background-color: red;
+}
+#f1{
+    background-color: violet;
+width:150px;
+height:150px;
+}
+#f4{
+    background-color: violet;
+width:75px;
+height:75px;
+}
+#f3{
+    background-color: violet;
+width:30px;
+height:30px;
+}
+#f2{
+    background-color: violet;
+width:15px;
+height:15px;
+}
+#re1{
+    background-color: green;
+    height:221px;
+    width:cal((100%*5)/8)
+}
+#re1{
+    background-color: green;
+    height:221px;
+    width:cal((100%*5)/8)
+}
+#re1{
+    background-color: green;
+    height:221px;
+    width:cal((100%*5)/8)
+}
+#re1{
+    background-color: green;
+    height:221px;
+    width:cal((100%*5)/8)
+}

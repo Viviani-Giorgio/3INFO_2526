@@ -1,0 +1,17 @@
+.gallery {
+    display: flex;
+}
+
+
+.cella {
+    text-align: center;
+}
+
+img {
+    width: 250px;
+}
+
+.didascalia {
+    border-bottom: 5px solid red;
+    padding: 8px;
+}

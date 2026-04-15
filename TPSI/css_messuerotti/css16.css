@@ -1,0 +1,35 @@
+.class1{
+    background-image:url("ciao.jpeg");
+    width: 100px;
+    height: 100px;
+}
+.class2{
+    background-image:url("") ;
+    width: 100px;
+    height: 100px;
+}
+.rep, .no, .repx, .repy{
+    background-image: url("");
+    width:100px;
+    height:50px;
+}
+.rep {
+     background-repeat: repeat; 
+     width: 50px;
+     height: 50px;
+    }
+.no { 
+    background-repeat: no-repeat; 
+    width: 50px;
+    height: 50px;
+}
+.repx { 
+    background-repeat: repeat-x; 
+    width: 50px;
+    height: 50px;
+}
+.repy { 
+    background-repeat: repeat-y;
+    width: 50px;
+    height: 50px;
+}
