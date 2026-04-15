@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio 13</title>
+</head>
+<body>
+    <form>
+        <label for="idNome">Nome e Cognome:</label>
+        <input type="text" id="idNome" name="nome" size="50" placeholder="Mario Rossi">
+        <br>
+        <label for="idUomo">Uomo</label>
+        <input type="radio" id="idUomo" name="Sesso" value="Uomo">
+        <label for="idDonna">Donna</label>
+        <input type="radio" id="idDonna" name="Sesso" value="Donna">
+        <br>
+        <label for="idUniversità">Univerità</label>
+        <select name="Università" id="idUniversità">
+            <option value="Sapienza Università di Roma">Sapienza Università di Roma</option>
+            <option value="Università degli Studi di Roma Tor Vergata">Università degli Studi di Roma Tor Vergata</option>
+            <option value="Università degli Studi Roma Tre">Università degli Studi Roma Tre</option>
+        </select>
+        <br>
+        <label for="idCap">CAP</label>
+        <input type="text" id="idCap" name="cap"  maxlength="5" placeholder="10029">
+        <br>
+        <label for="idLavoro">Studente Lavoratore?</label>
+        <input type="checkbox" id="idLavoro" name="Lavoro?">
+        <br>
+        <label for="idDescrizione">Descrizione Lavoro Svolto</label>
+        <input type="text" id="idDescrizione" size="80" placeholder="Descrivi il tuo lavoro">
+        <br>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

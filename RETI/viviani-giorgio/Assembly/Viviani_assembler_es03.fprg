@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Viviani_assembler_es03"/>
+        <attribute name="authors" value="giorg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-16 09:10:53 PM"/>
+        <attribute name="created" value="Z2lvcmc7REVTS1RPUC0zSVY5N0U2OzIwMjUtMTEtMTY7MDk6MDg6MzAgUE07Mjg0Ng=="/>
+        <attribute name="edited" value="Z2lvcmc7REVTS1RPUC0zSVY5N0U2OzIwMjUtMTEtMTY7MDk6MTA6NTMgUE07MTsyOTUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, p" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="10"/>
+            <assign variable="b" expression="11"/>
+            <assign variable="p" expression="(a*a)+(b*b)"/>
+        </body>
+    </function>
+</flowgorithm>

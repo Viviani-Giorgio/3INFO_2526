@@ -1,0 +1,9 @@
+h1 {color: blue;}
+
+#h1, #h5, #h3 {color: green;}
+
+#h2, #h4, #h6 {color : red;}
+
+#p1, #p5, #p3 {color: orange;}
+
+#p2, #p4, #p6 {color : gray;}

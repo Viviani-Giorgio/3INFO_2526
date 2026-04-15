@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio 16</title>
+  </head>
+  <body>
+    
+    <form>
+      <fieldset>
+        <legend>Dati Personali</legend>
+        <labbel for="nome">Nome:</labbel>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          size="30"
+          placeholder="Mario"
+        />
+        <br />
+        <labbel for="cognome">Cognome:</labbel>
+        <input
+          type="text"
+          name="Cognome"
+          id="cognome"
+          size="40"
+          placeholder="Rossi"
+        />
+        <br />
+        <label for="genere">Genere: </label>
+        <select name="genere" id="genere">
+          <option value="maschio">Maschio</option>
+          <option value="femmina">Femmina</option>
+        </select>
+        <br />
+        <label for="email">Enter your email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          size="30"
+          placeholder="mariorossi@gmail.com"
+        />
+        <br />
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="password" placeholder="abc123" />
+        <br />
+        <label for="idData">Data di nascita:</label>
+        <input type="date" id="idData" name="data" />
+        <br />
+        <label for="nazionalità">Nazionalità:</label>
+        <select name="nazionalità" id="regioni">
+          <option value="Italiana">Italiana</option>
+          <option value="Spagnolo">Spagnolo</option>
+          <option value="Argentino">Argentino</option>
+          <option value="Francese">Francese</option>
+          <option value="Inglese">Inglese</option>
+          <option value="Brasiliano">Brasiliano</option>
+          <option value="Portoghese">Portoghese</option>
+          <option value="Olandese">Olandese</option>
+          <option value="Altro">Altro</option>
+        </select>
+        <br />
+        <label for="altro">Altro:</label>
+        <input
+          type="text"
+          id="altro"
+          name="altro"
+          size="20"
+          placeholder="Altro"
+        />
+        <br />
+        <label for="lavoro">Attività lavorativa:</label>
+        <input
+          type="text"
+          id="lavoro"
+          name="lavoro"
+          size="20"
+          placeholder="Cameriere"
+        />
+        <br />
+        <label for="hobby">Hobby:</label>
+        <input
+          type="text"
+          id="hobby"
+          name="hobby"
+          size="20"
+          placeholder="Suono la chitarra"
+        />
+        <br />
+        <label for="altezza">Altezza:</label>
+        <input
+          type="number"
+          id="altezza"
+          name="altezza"
+          min="150"
+          max="210"
+          placeholder="180"
+        />
+        <br />
+        <label for="peso">Peso:</label>
+        <input type="number" id="peso" name="peso" placeholder="80" />
+        <br />
+        <label for="colore">Colore preferito:</label>
+        <input type="color" id="colore" name="colore" value="#ffffff" />
+        <br />
+        <label for="note">Note personali:</label>
+        <textarea
+          id="note"
+          name="note"
+          rows="4"
+          cols="50"
+          placeholder="Note personali"
+        ></textarea>
+        <hr />
+        <input type="submit" value="Invia" />
+        <input type="reset" value="reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>

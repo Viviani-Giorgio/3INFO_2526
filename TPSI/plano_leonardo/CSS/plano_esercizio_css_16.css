@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+}
+.d1, .d2 {
+    background-image: url("img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+}
+.d3, .d4 {
+    background-image: url("https://pixabay.com/it/photos/search/mare/");
+    background-size: cover;
+    width: 45%;
+    height: 150px;
+}
+.d5, .d6, .d7, .d8, .d9, .d10, .d11, .d12 {
+    background-image: url("img.jpg");
+    width: 200px;
+    height: 200px;
+}
+.d5, .d6 {
+    background-repeat: repeat;
+}
+.d7, .d8 {
+    background-repeat: no-repeat;
+}
+.d9, .d10 {
+    background-repeat: repeat-x;
+}
+.d11, .d12 {
+    background-repeat: repeat-y;
+}

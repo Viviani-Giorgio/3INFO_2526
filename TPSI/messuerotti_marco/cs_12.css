@@ -1,0 +1,14 @@
+a:link{
+    color:blue;   
+}
+a:hover { color: red; background: yellow;}
+a:active { color: grey; }
+h1:firt-child{
+    color:blue;
+}
+h2:firt-child{
+    color:blue;
+}
+p :firt-child{
+    color:red;
+}

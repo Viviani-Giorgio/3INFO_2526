@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Esercizio_HTML_16</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Dati personali</legend>
+            <table>
+                <tr>
+                    <td align="right">
+                        <label for="cognome">Cognome: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="cognome" name="cognome" size="20" placeholder="Rossi">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="nome">Nome: </label> 
+                    </td>
+                    <td>
+                        <input type="text" id="nome" name="nome" size="20" placeholder="Mario">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Genere: </td>
+                    <td>
+                        <input type="radio" value="uomo" name="genere" id="uomo">
+                        <label for="uomo">Uomo</label>
+                        <input type="radio" value="donna" name="genere" id="donna">
+                        <label for="donna">Donna</label>
+                        <input type="radio" value="x" name="genere" id="x">
+                        <label for="x">X</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="email">Email: </label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="nome.cognome@gmail.com" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="password">Password: </label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nascita">Data di nascita: </label>
+                    </td>
+                    <td>
+                        <input type="date" name="data" id="data">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nazionalita">Nazionalità: </label>
+                    </td>
+                    <td>
+                        <input list="nations" id="nazioni" name="nazioni">
+                        <datalist id="nations">
+                            <option value="Austria">
+                            <option value="Danimarca">                            
+                            <option value="Francia">
+                            <option value="Italia">                            
+                            <option value="Polonia">
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Hobby:</td>
+                    <td>
+                        <input type="checkbox" value="leggere" name="hobby" id="leggere">
+                        <label for="leggere">Leggere</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" value="disegnare" name="hobby" id="disegnare">
+                        <label for="disegnare">Disegnare</label> <br>
+                        <input type="checkbox" value="musica" name="hobby" id="musica">
+                        <label for="musica">Ascoltare musica</label> <br>
+                        <input type="checkbox" value="altro" name="hobby" id="altro">
+                        <label for="altro">Altro</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="eta">Età: </label>
+                    </td>
+                    <td>
+                        <input type="range" value="50" max="100" min="1" name="eta" id="eta">
+                    </td>                    
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="peso">Peso: </label>
+                    </td>
+                    <td>
+                        <input type="number" min="1" max="100" name="peso" id="peso">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="altezza">Altezza: </label>
+                    </td>
+                    <td>
+                        <input type="number" min="1" max="100" name="altezza" id="altezza">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="colore">Colore: </label>  
+                    </td>
+                    <td>
+                        <input type="color" name="colore" id="colore">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="lavoro">Lavoro: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="lavoro" id="lavoro">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <label for="note">Note personali: </label>
+            <textarea id="note" name="note" placeholder="Vorrei..." rows="3" cols="20"></textarea>
+        </fieldset>
+    </body>
+</html>

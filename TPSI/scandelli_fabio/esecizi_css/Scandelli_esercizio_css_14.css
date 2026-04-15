@@ -1,0 +1,23 @@
+ 
+td {
+    height: 50px;
+    width: 50px;
+} 
+.a {
+    background-color: white;
+}
+.b {
+    background-color: #81F4E1;
+}
+.c {
+    background-color:rgb(86, 203, 249);
+}
+.d {
+    background-color: rgba(255, 114, 159, 0.5);
+}
+.e {
+    background-color:hsl(300, 20%, 83%);
+}
+.f {
+    background-color: hsla(0, 100%, 50%, 0.5);
+}

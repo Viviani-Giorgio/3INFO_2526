@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localhost - Esercizio CSS 03</title>
+    <style>
+        h1, h2 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Localhost</h1>
+
+    <p>
+        In computer networking, <strong>localhost</strong> è un hostname che fa riferimento al computer attualmente in uso per accedervi. Viene utilizzato per accedere ai servizi di rete che sono in esecuzione sull'host tramite l'interfaccia di rete loopback. L'utilizzo dell'interfaccia loopback bypassa qualsiasi hardware di interfaccia di rete locale.
+    </p>
+
+    <h2>Loopback</h2>
+    <p>
+        Il meccanismo di loopback locale può essere utilizzato per eseguire un servizio di rete su un host senza richiedere un'interfaccia di rete fisica, o senza rendere il servizio accessibile dalle reti a cui il computer potrebbe essere connesso. Ad esempio, un sito web installato localmente può essere accessibile da un browser web tramite l'URL <a href="http://localhost">http://localhost</a> per visualizzare la sua home page.
+    </p>
+    <p>
+        Il nome <strong>localhost</strong> normalmente risolve all'indirizzo loopback IPv4 <strong>127.0.0.1</strong> e all'indirizzo loopback IPv6 <strong>::1</strong>.
+    </p>
+
+    <h2>Name Resolution</h2>
+    <p>
+        Gli standard di rete IPv4 riservano l'intero blocco di indirizzi <strong>127.0.0.0/8</strong> (più di 16 milioni di indirizzi) per scopi di loopback. Ciò significa che qualsiasi pacchetto inviato a uno di quegli indirizzi viene reindirizzato. L'indirizzo <strong>127.0.0.1</strong> è l'indirizzo standard per il traffico loopback IPv4; gli altri non sono supportati da tutti i sistemi operativi. Tuttavia, possono essere utilizzati per configurare più applicazioni server sull'host, tutte in ascolto sulla stessa porta.
+    </p>
+    <p>
+        La risoluzione del nome <strong>localhost</strong> in uno o più indirizzi IP è normalmente configurata dalle seguenti righe nel file hosts del sistema operativo:
+    </p>
+    <pre>
+127.0.0.1    localhost
+::1          localhost
+    </pre>
+
+    <h2>IETF Standards</h2>
+    <p>
+        Il nome <strong>localhost</strong> è riservato per scopi di loopback dallo standard RFC 6761 (Special-Use Domain Names), che ha raggiunto il livello di maturità Proposed Standard nel febbraio 2013. Lo standard stabilisce una serie di considerazioni speciali che governano l'uso del nome nel Domain Name System.
+    </p>
+
+    <h2>Packet Processing</h2>
+    <p>
+        L'elaborazione di qualsiasi pacchetto inviato a un indirizzo loopback è implementata nel livello di collegamento dello stack TCP/IP. Tali pacchetti non vengono mai passati a nessun controller di interfaccia di rete (NIC) o driver hardware e non devono apparire all'esterno di un sistema informatico, né essere instradati da alcun router.
+    </p>
+
+    <h2>Special Cases</h2>
+    <p>
+        Le versioni del database MySQL differenziano l'uso dell'hostname <strong>localhost</strong> dall'uso degli indirizzi <strong>127.0.0.1</strong> e <strong>::1</strong>. Quando si utilizza <strong>localhost</strong> come destinazione in un'interfaccia di connessione client di un'applicazione, l'API di programmazione MySQL si connette al database utilizzando un Unix domain socket, mentre una connessione TCP tramite l'interfaccia loopback richiede l'uso diretto dell'indirizzo esplicito.
+    </p>
+</body>
+</html>

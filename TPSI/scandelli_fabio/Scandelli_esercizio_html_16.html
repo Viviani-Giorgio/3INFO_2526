@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Esercizio 16</title>
+    </head>
+    <body>
+        <form>
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="lname">Cognome:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="cars">Genere:  </label>
+            <select name="genere" id="genr">
+                <option value="maschio">Maschio</option>
+                <option value="femmina">Femmina</option>
+                <option value="mal">Malattie Mentali</option>
+                
+            </select>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"> <br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd"> <br><br>
+            <input type="date" id="iddata" name="date"><br><br>
+            
+            <label for="nazioni">Nazionalità: </label><br>
+            <input list="nations" name="nazioni" id="nazioni">
+            <datalist id="nations">
+                <option value="Albanese">
+                <option value="Argentina">
+                <option value="Belga">
+                <option value="Biellorussa">
+                <option value="Italiana">
+                <option value="Irlandese">
+                <option value="Israeliana">
+                <option value="Cinese">
+                <option value="Danese">
+                <option value="Egiziana">
+                <option value="Francese">
+                <option value="Tedesca">
+                <option value="Greca">
+                <option value="Indiana">
+                <option value="Giapponese">
+                <option value="Messicana">
+                <option value="Nigeriana">
+                <option value="Portoghese">
+                <option value="Russa">
+                <option value="Spagnola">
+                <option value="Svedese">
+                <option value="Turca">
+                <option value="Ucraina">
+                <option value="Vietnamita">
+                <option value="Zambiana">
+                
+
+            
+            </datalist>
+            <br><br>
+            <label for="lavoro">Attività Lavorativa: </label><br>
+            <input list="jobs" name="lavoro" id="lavoro">
+            <datalist id="jobs">
+                <option value="Medico">
+                <option value="Infermiere">
+                <option value="Insegnante">
+                <option value="Ingegnere">
+                <option value="Programmatore">
+                <option value="Avvocato">
+                <option value="Commercialista">
+                <option value="Architetto">
+                <option value="Meccanico">
+                <option value="Elettricista">
+                <option value="Idraulico">
+                <option value="Chef">
+                <option value="Cameriere">
+                <option value="Commesso">
+                <option value="Operaio">
+            </datalist>
+            <br><br>
+            <label for="hobby">Hobby: </label><br>
+            <input list="hobbies" name="hobby" id="hobby">
+            <datalist id="hobbies">
+                <option value="Lettura">
+                <option value="Musica">
+                <option value="Sport">
+                <option value="Disegno">
+                <option value="Fotografia">
+                <option value="Cucina">
+                <option value="Giardinaggio">
+                <option value="Videogiochi">
+                <option value="Danza">
+                <option value="Viaggio">
+            </datalist>
+            <br><br>
+            <label for="altezza">Altezza (cm):</label>
+            <input type="number" id="altezza" name="altezza" min="0" max="300"><br><br>
+            <label for="peso">Peso (kg):</label>
+            <input type="range" id="peso" name="peso" min="0" max="200"><br><br>
+            <h3>Colore preferito</h3><br>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+            <label for="note">Note personali:</label><br>
+            <textarea id="note" name="note" rows="6" cols="60"></textarea><br><br>
+            <input type="submit" value="Invia">
+            <input type="reset" value="Resetta">
+          </form>
+    </body>
+</html>

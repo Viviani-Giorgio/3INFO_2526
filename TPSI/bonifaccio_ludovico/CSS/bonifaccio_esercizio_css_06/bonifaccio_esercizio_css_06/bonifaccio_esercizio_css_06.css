@@ -1,0 +1,17 @@
+/*<!-- seleziona tutti i tag <p> -->*/
+p { 
+    color: chartreuse;
+    text-align: left; 
+}
+/*<!-- seleziona il tag con id=prg1-->*/ 
+#pr1 { 
+  color: blue;
+}
+/*<!-- seleziona il tag con id=prg2--> */
+#pr2 { 
+  color: red; 
+}
+/*<!-- seleziona il tag con id=prg3--> */
+#pr3 { 
+ color: green; 
+}

@@ -1,0 +1,26 @@
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.gallery-table {
+  border-collapse: separate;
+  border-spacing: 20px; 
+}
+
+.container {
+  width: 250px;
+  text-align: center;
+}
+
+.container img {
+  width: 250px;
+}
+
+.caption {
+  border-bottom: 5px solid red; 
+  padding: 8px;                 
+  background-color: white;
+}

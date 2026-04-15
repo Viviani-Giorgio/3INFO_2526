@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <style>
+            body {background-color: rgb(255, 255, 255);}
+        </style>
+        <title>
+            Pagina FORM HTML
+        </title>
+    </head>
+    <body>
+        <h1>Database forze speciali</h1>
+        <br><h2>Dati personali</h2>
+
+    
+        <form align="center">
+            <label for="idcognome">Cognome: </label>
+            <input type="text" id="idcognome" name="dati personali" maxlength="40"><br>
+            <label for="idnome">Nome: </label>
+            <input type="text" id="idnome" name="dati personali" maxlength="30"><br>
+            <label for="idmatricola">Matricola: </label>
+            <input type="text" id="idmatricola" name="dati personali" maxlength="12"><br>
+            <label for="regioni">Regione</label>
+            <input list="regioni ita" name="regioni" id="regioni">
+            <datalist id="regioni ita">
+                <option value="Piemonte">
+                <option value="Valle d'Aosta">
+                <option value="Lombardia">
+                <option value="Trentino Alto Adige">
+                <option value="Veneto">
+                <option value="Friuli Venezia Giulia">
+                <option value="Liguaria">
+                <option value="Toscana">
+                <option value="Emilia Romagna">
+                <option value="Lazio">
+                <option value="Umbria">
+                <option value="Marche">
+                <option value="Abruzzo">
+                <option value="Molise">
+                <option value="Campania">
+                <option value="Puglia">
+                <option value="Basilicata">
+                <option value="Calabria">
+                <option value="Sicilia">
+                <option value="Sardegna">
+            </datalist><br>
+            <label for="idemail">email</label>
+            <input type="text" id="idemail" name="dati personali" maxlength="30"><br>
+            <label for="idtelefono">telefono</label>
+            <input type="text" id="idtelefono" name="dati personali" maxlength="15"><br>
+            <label for="richieste"><b>Richieste particolari</b></label>
+            <textarea id="richieste" name="note" rows="12" cols="60" placeholder="--Richieste particolari--"></textarea>
+            <label for="idbutton"></label><br>
+            <input type="button" id="idbutton" value="Invia form">
+            <input type="reset" id="reset" value="Reset">
+        </form>

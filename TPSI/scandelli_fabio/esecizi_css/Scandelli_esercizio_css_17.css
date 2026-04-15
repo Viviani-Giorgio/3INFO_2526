@@ -1,0 +1,11 @@
+img {
+    width: 250px;
+}
+
+div {
+    border: 5px solid red;
+    width: 250px;
+}
+p {
+    padding: 8px;
+}

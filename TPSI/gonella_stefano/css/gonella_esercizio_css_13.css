@@ -1,0 +1,31 @@
+/*.p > td:nth-child(2n){
+    background-color: antiquewhite;
+}
+.p > td:nth-child(2n+1){
+    background-color: brown;
+}
+.r > td:nth-child(2n+1){
+    background-color: antiquewhite;
+}
+.r > td:nth-child(2n){
+    background-color: brown;
+}
+    */
+td {
+    height: 50px;
+    width: 50px;
+} 
+ 
+tr:nth-child(2n) > td:nth-child(2n) {
+    background-color: antiquewhite;
+}
+tr:nth-child(2n) > td:nth-child(2n+1) {
+    background-color: brown;
+}
+tr:nth-child(2n+1) > td:nth-child(2n) {
+    background-color: brown;
+}           
+tr:nth-child(2n+1) > td:nth-child(2n+1) {
+    background-color: antiquewhite;
+}
+

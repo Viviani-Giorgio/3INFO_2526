@@ -1,0 +1,21 @@
+h1 {
+    color: blue;
+}
+
+#h1, #h5, #h3 {
+    color: red;
+}
+
+#h2, #h4, #h6 {
+    color : green;
+}
+
+#p1, #p5, #p3 {
+    color: grey;
+}
+
+#p2, #p4, #p6 {
+    color : orange;
+}
+
+

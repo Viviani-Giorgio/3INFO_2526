@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Esercizio_HTML_14</title>
+        <meta http-equiv="refresh" content="100000">
+    </head>
+    <body>
+        <p> inserisci i tui dati:</p>
+        <form>
+            <label for="idnome">Nome: </label>
+            <input type="text" id="idnome" name="nome" placeholder="Nome">
+            <label for="idcognome">Cognome: </label>
+            <input type="text" id="idcognome" name="cognnome" placeholder="Cognome">
+            <p>inserisci la tua data di nascita:</p>
+            <input type="date" id="iddata" name="birthday"><br>
+            <p>che lavoro svolgi?:</p>
+            <input type="radio" id="studente" name="occupazione" value="studente">
+            <label for="studente">  Studente</label><br>
+            <input type="radio" id="occupato" name="occupazione" value="occupato">
+            <label for="occupato">  Impiegato</label><br>
+            <input type="radio" id="disoccupato" name="occupazione" value="disoccupato">
+            <label for="disoccupato">  Disoccupato</label><br><br>
+            <label for="nazioni">Nazionalità: </label><br>
+            <input list="nations" name="nazioni" id="nazioni">
+            <datalist id="nations">
+                <option value="Albanese">
+                <option value="Argentina">
+                <option value="Francese">
+                <option value="Germanica">
+                <option value="Italiana">
+                <option value="Irlandese">
+                <option value="Israeliana">
+            </datalist>
+            <p>qual'è il tuo colore pereferito?</p>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+            <p>quanto sei alto?</p>
+            <input type="number" id="altezza" name="altezza" min="150" max="200"><br><br>
+            <p>quanti anni hai? da 0 a 110</p>
+            <input type="number" id="età" name="età" min="0" max="110"><br><br>
+            <p>inserisci il tuo peso in kg</p>
+            <input type="number" id="peso" name="peso" min="10" max="80"><br><br>
+            <label for="mediascuola">inserisci la tua media scolastica</label>
+            <input type="number" id="mediascuola" name="mediascuola" min="2" max="10"><br><br>
+            <p>a che giochi ti piace giocare?:</p>
+            <input type="checkbox" id="Minecraft" name="giochi" value="minecraft">
+            <label for="Minecraft">  Minecraft</label><br>
+            <input type="checkbox" id="fortnite" name="giochi" value="fortnite">
+            <label for="fortnite">  fortnite</label><br>
+            <input type="checkbox" id="il giocodella vita" name="sport" value="ilgiocodellavita">
+            <label for="il giocodellavita"> il gioco della vita</label><br>
+            <input type="checkbox" id="trytohackme" name="giochi" value="trytohackme">
+            <label for="trytohackme"> trytohackme</label> <br>
+            <input type="checkbox" id="roblox" name="giochi" value="roblox">
+            <label for="roblox"> roblox</label><br><br>
+            <label for="peso">Peso:</label>
+                <input type="range" min="50" max="100" value="60" class="slider" id="peso"> 
+             <br> <br>
+             <p>che tipo di scarpe ti piacciono</p>
+             <label for="scarpe">Genere di scarpe che ti piacciono:  </label>
+            <select name="scarpe" id="scarpe">
+                <option value="nike">Nike</option>
+                <option value="lumberjack">Lumberjack</option>
+                <option value="geox">Geox</option>
+                <option value="adidas">Adidas</option>
+                <option value="skechers">Skechers</option> 
+            </select> <br> <br>
+                <label for="text">Recensione sito:
+                <textarea id="text" name="text" rows="6" cols="60" placeholder="Inserisci il tuo pensiero sul sito"></textarea> 
+            </label> <br> <br>
+            <label for="idbutton">Premi il pulsante e vedi che succede: </label>
+            <input type="button" id="idbutton" value="Cliccami!!"> <br>
+              
+            
+    </body>
+</html>

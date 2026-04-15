@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="it">
+  <!--Specificazione lingua-->
+  <head>
+    <!--Informazioni e meta-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francesco Costanzo Portfolio</title>
+
+    <!--Qui CSS in futuro-->
+  </head>
+  <body>
+    <!--Parte iniziale con titolo e logo-->
+    <h1>Francesco Costanzo</h1>
+    <!--Varie ancore alle parti del sito-->
+
+    <!--Inizio conoscienze-->
+    <ul>
+      <li><h2>Scelta della scuola</h2></li>
+      <p>
+        Ho sempre sognato di saper programmare e smanettare con il computer però
+        non sapevo da dove iniziare e avevo paura di rompere qualcosa, inoltre
+        il mondo delle connesioni internet, di questa "magia" mi ha sempre
+        incuriosito. <br />Così ho trovato l'indirizzo perfetto per me e sotto
+        consiglio ho scelto questo istituto. <br />
+        Ho atteso fino alla terza superiore, quindi al primo anno di indirizzo
+        informatica e telecomunicazioni, per iniziare a documentarmi in
+        autonomia, e con l'aiuto dei professori sto apprendendo i principi e gli
+        approfondimenti delle loro materie.
+      </p>
+      <!--linux-->
+      <li><h2>Un'ottima partenza: Linux</h2></li>
+      <p>
+        Durante le prime settimane del terzo anno il professore, di tpsi e
+        sistemi e reti,
+        <b
+          ><a href="https://www.eprof.it/profile/mancusoa74/" target="_blank"
+            >Mancuso</a
+          ></b
+        >
+        ci ha spiegato, brevemente, che cos'è linux e lo abbiamo inizialmente
+        utilizzato sui computer della scuola.<br />
+        nei giorni dopo la sua lezione mi sono documentato sulla storia di
+        <b
+          ><a
+            href="https://it.wikipedia.org/wiki/Linus_Torvalds"
+            target="_blank"
+            >Linus Torvalds</a
+          ></b
+        >
+        e ne sono rimasto affascinato! Le sue parole:<cite
+          >"Sto facendo un sistema operativo (libero), (solo un passatempo, non
+          sarà né grosso né professionale come gnu)".</cite
+        >
+        <br />Lui ha attuato perfettamente la filosofia dell'open source.
+      </p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDAEfsg23XTqOnZnURfv3yxqir1j1yWt6f_Q&s"
+        alt="Logo linux con Tux"
+      />
+      <!--distribuzioni-->
+      <li><h2>La mia esperienza con Linux</h2></li>
+      <p>
+        Prima della mia esperienza bisogna capire come funziona Linux.<br />
+        Linux in se è il kernel, la distribuzione utilizza il kernel per
+        funzionare.<br />
+        Io ho iniziato con una distribuzione user friendly:
+        <a href="https://zorin.com/os/download/" target="_blank">Zorin OS</a>
+        basata su ubuntu, semplice per i nuovi utenti. <br />
+        Poi sono passato ad
+        <a href="https://artixlinux.org/" target="_blank">Artix Linux</a> basato
+        su Arch, molto più complesso già dall'installazione, ma questa
+        complessità mi ha permesso di imparare come funziona ogni sistema
+        operativo, cos'è una
+        <a
+          href="https://en.wikipedia.org/wiki/Desktop_environment"
+          target="_blank"
+        >
+          Desktop Environment</a
+        >
+        come installarla e quali esistono, che cos'è un
+        <a href="https://it.wikipedia.org/wiki/File_system" target="_blank"
+          >File System</a
+        >
+        e come funziona il file system di Linux, cos'è un
+        <a
+          href="https://it.wikipedia.org/wiki/Sistema_di_gestione_dei_pacchetti"
+          target="_blank"
+          >Package Manager</a
+        >
+        e che comandi utilizza quello di Arch, ovvero Pacman. Insomma, Linux mi
+        ha aperto un vero e proprio nuovo mondo.
+      </p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/ArtixLogo.svg/250px-ArtixLogo.svg.png"
+        alt="immagine artix linux"
+      />
+
+      <!--ai in locale-->
+      <li><h2>Intelligenza artificiale in locale</h2></li>
+      <p>
+        Ho installato un'intelligenza artificiale in locale, quindi che sfrutta
+        la memoria RAM, la GPU o CPU nel caso sia molto potente come il modello
+        di gpt-oss. <br />
+        Ho utilizzato un "tramite" che si chiama
+        <a href="https://ollama.com/" target="_blank">Ollama</a>, con comandi
+        tramite terminale come:<br />
+      </p>
+      <pre>
+      ''''
+      bash
+    <code>
+        ollama serve                                    # Per avviare il servizio, deve rimanere avviato: funzionerà come log.
+        ollama run "nome del servizio come gpt-oss"     # Per avviare l'AI. (Questo in una finestra di terminale diverso rispetto al comando precedente)
+
+      ''''</code></pre>
+      <p>Ecco un esempio di output dell'AI di gpt-oss:</p>
+      <img src="./immagini/ai.jpeg" alt="Immagine esempio output AI" />
+      <p>
+        Come si può notare, gpt-oss ci mostra anche come pensa l'AI prima di
+        dare una risposta.<br />
+        Ovviamente gpt-oss è un modello molto pesante, esistono anche modelli
+        più leggeri nella pagina
+        <a href="https://ollama.com/search" target="_blank">models</a> del loro
+        sito.
+      </p>
+      <!--Grandi differenze e tabella-->
+      <h3>Grandi differenze con AI online</h3>
+      <table border="1" bordercolor="black" bgcolor="black">
+        <thead>
+          <tr>
+            <th bgcolor="white">Caratteristiche</th>
+            <th bgcolor="orange">ChatGPT</th>
+            <th bgcolor="lightblue">GPT-OSS(locale)</th>
+          </tr>
+        </thead>
+        <tbody bgcolor="white">
+          <tr>
+            <td>Dove gira</td>
+            <td>Cloud OpenAI</td>
+            <td>Sul tuo PC</td>
+          </tr>
+          <tr>
+            <td>Privacy</td>
+            <td>Dati ai server</td>
+            <td>Dati solo locali</td>
+          </tr>
+          <tr>
+            <td>Facilità</td>
+            <td>Molto facile</td>
+            <td>Richiede setup</td>
+          </tr>
+          <tr>
+            <td>Costo</td>
+            <td>Gratis/abbonamento</td>
+            <td>Gratis</td>
+          </tr>
+          <tr>
+            <td>Prestazioni</td>
+            <td>Sempre ottimale</td>
+            <td>Dipende dal tuo hardware</td>
+          </tr>
+          <tr>
+            <td>Personalizzazione</td>
+            <td>Limitata</td>
+            <td>Massima (modificabile)</td>
+          </tr>
+          <tr>
+            <td>Connessione</td>
+            <td>Necessaria</td>
+            <td>Può funzionare offline</td>
+          </tr>
+        </tbody>
+      </table>
+    </ul>
+  </body>
+</html>

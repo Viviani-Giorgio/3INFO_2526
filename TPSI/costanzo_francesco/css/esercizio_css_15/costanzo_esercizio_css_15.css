@@ -1,0 +1,69 @@
+:root{
+    --colore-viola:purple;
+    --colore-verde:rgba(0, 128, 0, 0.65);
+    --colore-rosso:red;
+}
+
+/* rettangolo rosso */
+
+#rettangoloRosso {
+    background-color:var(--colore-rosso)    ;
+    width:400px;
+    height:200px;
+    
+}
+
+/* rettangoli Viola */
+
+#rettangoloViola1{
+    
+    background-color: var(--colore-viola);
+    width:calc(100% / 4);
+    height: 150px;
+    
+}
+
+#rettangoloViola2{
+    background-color: var(--colore-viola);
+    width:calc(100% / 2);
+    height: 150px;
+}
+
+#rettangoloViola3{
+    background-color: var(--colore-viola);
+    width:calc(100% * 3 / 4);
+    height: 150px;
+}
+
+#rettangoloViola4{
+    background-color: var(--colore-viola);
+    width:calc(100% / 1);
+    height: 150px;
+}
+
+/* rettangoli Verdi */
+
+#rettangoloVerde1{
+    
+    background-color: var(--colore-verde);
+    width:calc(100% * 1 / 8);
+    height: 221px;
+}
+
+#rettangoloVerde2{
+    background-color: var(--colore-verde);
+    width:calc(100% * 3 / 6);
+    height: 221px;
+}
+
+#rettangoloVerde3{
+    background-color: var(--colore-verde);
+    width:calc(100% * 5 / 8);
+    height: 221px;
+}
+
+#rettangoloVerde4{
+    background-color: var(--colore-verde);
+    width:calc(100% * 2 / 9);
+    height: 221px;
+}

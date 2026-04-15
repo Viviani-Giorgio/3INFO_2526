@@ -1,0 +1,21 @@
+h1,h2 {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color:grey;
+}
+
+p {
+    color: blue;
+    text-align: left;
+}
+
+h2 {
+    color: green;
+}
+
+.hrp {
+    height: 10px;
+}
+.hrd {
+    height: 3px;
+}

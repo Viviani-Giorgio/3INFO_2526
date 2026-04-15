@@ -1,0 +1,19 @@
+h1 {color: blue;}
+
+
+
+#h2 {color : green;}
+
+
+
+h1, h2 {color: red; text-decoration: underline; }
+
+p {text-align: left; color:blue}
+
+
+
+#p7 {color: red; text-align: right;}
+
+#hr2 {color: black; height: 10px;}
+
+#hr1 {color:red; height: 3px;}

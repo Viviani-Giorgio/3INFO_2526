@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Scandelli_assembler_es02"/>
+        <attribute name="authors" value="newfa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-16 06:45:55 "/>
+        <attribute name="created" value="bmV3ZmE7UENGQUJJTzsyMDI1LTExLTE2OyIwNjozNToxNSAiOzIyMjI="/>
+        <attribute name="edited" value="bmV3ZmE7UENGQUJJTzsyMDI1LTExLTE2OyIwNjo0NTo1NSAiOzE7MjMzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <output expression="2*A+3*B-C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raccolta dati personali</title>
+</head>
+<body>
+    <h1>Form per la raccolta di dati personali</h1>
+    <form action="#" method="post">
+        <label for="nome_cognome">Nome e Cognome:</label>
+        <input type="text" id="nome_cognome" name="nome_cognome" required><br><br>
+
+        <label for="genere">Genere:</label>
+        <select id="genere" name="genere" required>
+            <option value="">Seleziona...</option>
+            <option value="maschio">Maschio</option>
+            <option value="femmina">Femmina</option>
+            <option value="altro">Altro</option>
+            <option value="preferisco_non_dire">Preferisco non dire</option>
+        </select><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="data_nascita">Data di nascita:</label>
+        <input type="date" id="data_nascita" name="data_nascita" required><br><br>
+
+        <label for="nazionalita">Nazionalità:</label>
+        <input type="text" id="nazionalita" name="nazionalita" required><br><br>
+
+        <label for="attivita_lavorativa">Attività lavorativa:</label>
+        <input type="text" id="attivita_lavorativa" name="attivita_lavorativa"><br><br>
+
+        <label for="hobby">Hobby:</label>
+        <input type="text" id="hobby" name="hobby"><br><br>
+
+        <label for="altezza">Altezza (cm):</label>
+        <input type="number" id="altezza" name="altezza"><br><br>
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso"><br><br>
+
+        <label for="colore_preferito">Colore preferito:</label>
+        <input type="text" id="colore_preferito" name="colore_preferito"><br><br>
+
+        <label for="note_personali">Note personali:</label><br>
+        <textarea id="note_personali" name="note_personali" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+p > mark {
+    color: green;
+}
+
+b:nth-child(odd) {
+    color: yellow;
+    background-color: black;
+}
+
+div em {
+    color: red;
+    background-color: yellow;
+}
+
+div span {
+    background-color: yellow;
+    color: black;
+}

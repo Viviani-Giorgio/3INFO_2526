@@ -1,0 +1,38 @@
+#hotbar{
+    display:flex;
+    border:8px solid #606BFF;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    border-radius: 30px;
+    background-color: #e0e2ff;
+}
+
+/* Ancore */
+
+.divAncora {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.ancora:link, .ancora:visited{
+    color: #2b00ff;
+    vertical-align: middle;
+    text-align: center;
+    width:auto;
+    border-radius: 10px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;  
+}
+
+.ancoraAdesso {
+    color: #2b00ff;
+    background-color: #FFFFFF;
+    vertical-align: middle;
+    text-align: center;
+    width:auto;
+    border-radius: 10px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+}

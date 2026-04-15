@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localhost - Esercizio CSS 11</title>
+    <link rel="stylesheet" href="nocera_esercizio_css_11.css">
+</head>
+<body>
+    <h1>Localhost</h1>
+
+    <p>
+        In computer networking, <mark>localhost</mark> è un hostname che fa riferimento al computer attualmente in uso per accedervi. Viene utilizzato per accedere ai servizi di rete che sono in esecuzione sull'host tramite l'interfaccia di rete loopback.
+    </p>
+
+    <p>
+        Il meccanismo di loopback locale può essere utilizzato per eseguire un servizio di rete su un host senza richiedere un'interfaccia di rete fisica, o senza rendere il servizio accessibile dalle reti a cui il computer potrebbe essere connesso. Ad esempio, un sito web installato localmente può essere accessibile da un browser web tramite l'URL <a href="http://localhost">http://localhost</a> per visualizzare la sua home page.
+    </p>
+
+    <div>
+        <p>
+            Il nome <b>localhost</b> normalmente risolve all'indirizzo loopback IPv4 <strong>127.0.0.1</strong> e all'indirizzo loopback IPv6 <strong>::1</strong>.
+        </p>
+        <p>
+            Gli standard di rete IPv4 riservano l'intero blocco di indirizzi <strong>127.0.0.0/8</strong> (più di 16 milioni di indirizzi) per scopi di loopback.
+        </p>
+        <em>Questo meccanismo è fondamentale per lo sviluppo e il testing locale.</em>
+    </div>
+
+    <p>
+        La risoluzione del nome <strong>localhost</strong> in uno o più indirizzi IP è normalmente configurata dalle seguenti righe nel file hosts del sistema operativo:
+    </p>
+    <pre>
+127.0.0.1    localhost
+::1          localhost
+    </pre>
+
+    <div>
+        <p>
+            Il file <span>hosts</span> è un file di sistema utilizzato per mappare gli hostname agli indirizzi IP.
+        </p>
+        <p>
+            Il nome <strong>localhost</strong> è riservato per scopi di loopback dallo standard RFC 6761.
+        </p>
+    </div>
+
+    <p>
+        L'elaborazione di qualsiasi pacchetto inviato a un indirizzo loopback è implementata nel livello di collegamento dello stack TCP/IP.
+    </p>
+</body>
+</html>

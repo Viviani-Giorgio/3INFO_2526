@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.rettangolo {
+    height: 200px;
+}
+
+.rosso {
+    width: 400px;
+    background-color: red;
+}
+
+.viola {
+    width: calc(400px / 4);
+    height: 150px;
+    background-color: purple;
+}
+
+.verde {
+    width: calc(400px / 8 * var(--multiplier, 1));
+    height: 221px;
+    background-color: green;
+    opacity: 0.65;
+}
+
+.viola.uno { width: calc(400px / 4 * 1); }
+.viola.due { width: calc(400px / 4 * 2); }
+.viola.tre { width: calc(400px / 4 * 3); }
+.viola.quattro { width: calc(400px / 4 * 4); }
+
+.verde.uno { --multiplier: 1; }
+.verde.due { --multiplier: 3; }
+.verde.tre { --multiplier: 5; }
+.verde.quattro { --multiplier: 2; }

@@ -1,0 +1,16 @@
+.table {        
+    height: 400px; 
+    width: 200px;
+    }
+
+.a { background-color:navy; }
+
+.b { background-color: #7692FF; }
+
+.c { background-color: rgb(171, 210, 250); }
+
+.d { background-color: rgba(61, 81, 140, 0.5); }
+
+.e { background-color: hsl(234, 75%, 43%); }
+
+.f { background-color: hsla(249, 73%, 40%, 0.75); }

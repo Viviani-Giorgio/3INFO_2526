@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Scandelli_assembler_es04"/>
+        <attribute name="authors" value="newfa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-16 08:09:25 "/>
+        <attribute name="created" value="bmV3ZmE7UENGQUJJTzsyMDI1LTExLTE2OyIwODowNzo0MSAiOzIyMjI="/>
+        <attribute name="edited" value="bmV3ZmE7UENGQUJJTzsyMDI1LTExLTE2OyIwODowOToyNSAiOzE7MjMzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a == b">
+                <then>
+                    <output expression="a*b" newline="True"/>
+                </then>
+                <else>
+                    <output expression="a+b" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

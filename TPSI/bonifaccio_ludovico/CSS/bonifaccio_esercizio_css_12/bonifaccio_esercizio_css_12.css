@@ -1,0 +1,21 @@
+a:link { color: blue; } /*<!-- unvisited link -->*/
+
+a:visited { color: red; background: yellow;} /*<!-- visited link -->*/
+
+a:hover { color: green;} /*<!-- mouse over link -->*/
+
+h1 {
+    color: red;
+  }
+  
+  h1:first-child { 
+    color: blue;
+  }
+  h1:first-child { 
+    color: blue;
+  }
+
+  p:first-child { 
+    color: red;
+    align-items: left;
+  }

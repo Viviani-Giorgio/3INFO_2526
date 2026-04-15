@@ -1,0 +1,37 @@
+/* Punto 3: Heading h1, h2 e h3 rossi con sottolineatura grigia */
+h1, h2, h3 {
+    color: red;
+    text-decoration: underline gray;
+}
+
+/* Punto 4: Tutti i paragrafi blu e allineati a sinistra */
+p {
+    color: blue;
+    text-align: left;
+}
+
+/* Punto 5: Solo il TERZO heading h2 di colore verde */
+h2:nth-of-type(3) {
+    color: green;
+}
+
+/* Punto 6: Solo il SETTIMO paragrafo rosso e a destra */
+p:nth-of-type(7) {
+    color: red;
+    text-align: right;
+}
+
+/* Punto 7: Tag <hr> PARI (2, 4, 6...) nero e spessore 10px */
+/* Nota: Usiamo border o height a seconda di come vuoi visualizzarlo */
+hr:nth-of-type(even) {
+    border: none;
+    background-color: black;
+    height: 10px;
+}
+
+/* Punto 8: Tag <hr> DISPARI (1, 3, 5...) rosso e spessore 3px */
+hr:nth-of-type(odd) {
+    border: none;
+    background-color: red;
+    height: 3px;
+}

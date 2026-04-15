@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="aviano_assembler_es03"/>
+        <attribute name="authors" value="rick"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-16 06:47:07 PM"/>
+        <attribute name="created" value="cmljaztSSUNLUEM7MjAyNS0xMS0xNjswNTo1MjowMSBQTTsyMTQ0"/>
+        <attribute name="edited" value="cmljaztSSUNLUEM7MjAyNS0xMS0xNjswNjo0NzowNyBQTTsxOzIyNjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c1, c2" type="Integer" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <assign variable="c1" expression="2"/>
+            <assign variable="c2" expression="10"/>
+            <assign variable="area" expression="(c1 * c2) / 2"/>
+        </body>
+    </function>
+</flowgorithm>

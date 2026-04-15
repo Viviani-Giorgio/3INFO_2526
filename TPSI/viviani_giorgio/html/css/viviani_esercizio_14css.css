@@ -1,0 +1,31 @@
+.col1 {
+    background-color: red;
+}
+
+.hex1 {
+    background-color: #cc12aa
+}
+
+.rgb1{
+background-color: rgb(78, 78, 128);
+
+}
+
+.rgba1{
+    background-color: rgba(55, 25, 176,0.4);
+}
+
+ .high{
+    background-color: hsl(311, 52%, 55%);
+ }
+
+.higha {
+background-color: hsla(271, 76%, 53%, 0.3);
+
+}
+
+
+td { 
+    width: 300px; 
+height: 200px;
+}

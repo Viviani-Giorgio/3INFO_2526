@@ -1,0 +1,15 @@
+p > mark {
+    color: green
+}
+p > b {
+    color: yellow;
+    background-color: black;
+}
+div em{
+    color: red;
+    background-color: yellow;
+}
+span em{
+    color: black;
+    background-color: yellow;
+}

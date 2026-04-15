@@ -1,0 +1,28 @@
+td {
+    width: 200px;
+    height: 200px;;
+}
+
+.coloreNome {
+    background-color: purple;
+}
+
+.coloreHEX {
+    background-color: #81378A;
+}
+
+.colorergb {
+    background-color: rgb(129, 110, 148);
+}
+
+.colorergba {
+    background-color: rgba(140, 199, 161, 0.2);
+}
+
+.colorehls {
+    background-color: hsl(154, 48%, 71%);
+}
+
+.colorehlsa{
+    background-color: hsla(163, 66%, 75%, 0.4);
+}

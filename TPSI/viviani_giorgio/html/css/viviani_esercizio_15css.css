@@ -1,0 +1,67 @@
+  #rect {
+    background-color: red;
+    border: 1px solid;
+    width: 400px;
+    height: 200px;
+  }
+  #rec1
+  {
+background-color: purple;
+border: 1px solid;
+height: 150px;
+width: calc(100% * 1 / 4);
+  }  
+#rec2
+{
+background-color: purple;
+border: 1px solid;
+height: 150px;
+width: calc(100% * 2 / 4);
+}
+
+#rec3
+{
+background-color: purple;
+border: 1px solid;
+height: 150px;
+width: calc(100% * 3 / 4);
+}
+
+#rec4
+{
+background-color:purple;
+border: 1px solid;
+height: 150px;
+width: calc(100% * 4 / 4);
+}
+
+ #rec5
+  {
+background-color:rgba(0, 128, 0,0.65);
+border: 1px solid;
+height: 221px;
+width: calc(100% * 1 / 8);
+  }  
+#rec6
+{
+background-color:rgba(0, 128, 0,0.65);
+border: 1px solid;
+height: 221px;
+width: calc(100% * 3 / 6);
+}
+
+#rec7
+{
+background-color:rgba(0, 128, 0,0.65);
+border: 1px solid;
+height: 221px;
+width: calc(100% * 5 / 8);
+}
+
+#rec8
+{
+background-color:rgba(0, 128, 0,0.65);
+border: 1px solid;
+height: 221px;
+width: calc(100% * 2 / 9);
+}

@@ -1,0 +1,37 @@
+.bg1
+{
+    background-image: url(Scaricati/download.jpeg);
+    width: 250px;
+    height: 90px;
+    border: 1px solid black;
+}
+.bg2
+{
+    background-image: url(Scaricati/download.jpeg);
+    width: 250px;
+    height: 90px;
+    border: 1px solid black;
+}
+.bg3, .bg4, .bg5, .bg6
+{
+    background-image: url(Scaricati/download.jpeg);
+    width: 250px;
+    height: 90px;
+    border: 1px solid black;
+}
+.bg3
+{
+    background-repeat: repeat;
+}
+.bg4
+{
+    background-repeat: no-repeat;
+}
+.bg5
+{
+    background-repeat: repeat-x;
+}
+.bg6
+{
+    background-repeat: repeat-y;
+}
