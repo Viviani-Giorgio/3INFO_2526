@@ -1,0 +1,14 @@
+h1 {
+        border-bottom: solid 5px rgb(30, 27, 206);
+        border-left: solid 7px rgb(0, 0, 0);    
+   }
+
+h2 {
+        border-top: dashed 2px rgb(9, 187, 9);
+   }
+
+p  {
+        border-bottom: dashed 3px rgba(123, 128, 123, 0.87) ;
+        border-left: solid 6px rgb(4, 92, 4);
+        border-right: solid 6px rgb(4, 92, 4);
+   }
