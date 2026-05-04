@@ -1,0 +1,33 @@
+
+table {
+    border-collapse: collapse;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #000;
+}
+
+
+.color-name-1 { background-color: DeepSkyBlue; }
+.color-name-2 { background-color: Gold; }
+
+
+.color-hex-1 { background-color: #FF5733; }
+.color-hex-2 { background-color: #8E44AD; }
+
+.color-rgb-1 { background-color: rgb(46, 204, 113); }
+.color-rgb-2 { background-color: rgb(231, 76, 60); }
+
+.color-rgba-1 { background-color: rgba(52, 152, 219, 0.5); }
+.color-rgba-2 { background-color: rgba(241, 196, 15, 0.3); }
+
+
+.color-hsl-1 { background-color: hsl(280, 60%, 50%); }
+.color-hsl-2 { background-color: hsl(150, 70%, 40%); }
+
+
+.color-hsla-1 { background-color: hsla(20, 100%, 50%, 0.6); }
+.color-hsla-2 { background-color: hsla(190, 80%, 70%, 0.4); }

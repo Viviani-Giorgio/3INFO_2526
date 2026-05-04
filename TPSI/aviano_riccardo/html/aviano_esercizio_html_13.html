@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <style>
+            body {background-color: rgb(255, 255, 255);}
+        </style>
+        <title>
+            Pagina FORM HTML
+        </title>
+    </head>
+    <body>
+        <h1>Iscrizione centro sportivo</h1>
+        <br><h2>Dati personali</h2>
+
+    
+        <form>
+            <label for="idnome">Nome e Cognome: </label>
+            <input type="text" id="idnome" name="dati personali" placeholder="" size="50">
+            <h2>Sesso</h2>
+            <input type="radio" id="maschio" name="sesso" value="maschio">
+            <label for="maschio">Maschio</label><br>
+            <input type="radio" id="femmina" name="sesso" value="femmina">
+            <label for="tennis">Femmina</label><br>
+            <h2>Università</h2>
+            <label for="università">Università: </label>
+            <select name="università" id="università">
+                <option value="romatre">Roma Tre</option>
+                <option value="torvergata">Tor Vergata</option>
+                <option value="foroitalico">Foro Italico</option>
+            </select>
+            <label for="idcap">CAP: </label>
+            <input type="text" id="idcap" name="università" placeholder="" maxlength="5">
+            <h2>Studente lavoratore?</h2>
+            <input type="checkbox" id="vero" name="vero">
+            <label for="studente">Si</label><br>
+            <label for="bio">Descrivi il tuo lavoro:</label>
+            <textarea id="bio" name="bio" rows="4" cols="80" placeholder="Descrivi il tuo lavoro"></textarea><br><br>
+            <label for="idbutton"></label><br>
+            <input type="button" id="idbutton" value="invia form">
+            <label for="idbuttonr"></label><br>
+            <input type="reset" id="idbuttonr" value="Reset">
+        </form>

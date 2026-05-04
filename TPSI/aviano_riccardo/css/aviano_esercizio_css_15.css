@@ -1,0 +1,53 @@
+.rettangolo1 {
+    background-color: red;
+    width: 400px;
+    height: 200px;
+}
+
+.rettangolo2 {
+    background-color: purple;
+    height: 150px;
+    width: 25%;
+}
+
+.rettangolo3 {
+    background-color: purple;
+    height: 150px;
+    width: 50%;
+}
+
+.rettangolo4 {
+    background-color: purple;
+    height: 150px;
+    width: 75%;
+}
+
+.rettangolo5 {
+    background-color: purple;
+    height: 150px;
+    width: 100%;
+}
+
+.rettangolo6 {
+    background-color: rgba(0, 255, 0, 65%);
+    height: 221px;
+    width: calc(100% / 8);
+}
+
+.rettangolo7 {
+    background-color: rgba(0, 255, 0, 65%);
+    height: 221px;
+    width: calc((100% * 3) / 6);
+}
+
+.rettangolo8 {
+    background-color: rgba(0, 255, 0, 65%);
+    height: 221px;
+    width: calc((100% * 5) / 8);
+}
+
+.rettangolo9 {
+    background-color: rgba(0, 255, 0, 65%);
+    height: 221px;
+    width: calc((100% * 2) / 9);
+}

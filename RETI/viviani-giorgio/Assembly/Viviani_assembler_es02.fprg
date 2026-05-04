@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Viviani_assembler_es02"/>
+        <attribute name="authors" value="giorg"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-16 09:08:26 PM"/>
+        <attribute name="created" value="Z2lvcmc7REVTS1RPUC0zSVY5N0U2OzIwMjUtMTEtMTY7MDk6MDI6MjggUE07Mjg0Nw=="/>
+        <attribute name="edited" value="Z2lvcmc7REVTS1RPUC0zSVY5N0U2OzIwMjUtMTEtMTY7MDk6MDg6MjYgUE07MTsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, sum" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="20"/>
+            <assign variable="b" expression="9"/>
+            <assign variable="c" expression="11"/>
+            <assign variable="sum" expression="2*(a)+3*(b)-c"/>
+        </body>
+    </function>
+</flowgorithm>

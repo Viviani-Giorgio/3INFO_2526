@@ -1,0 +1,29 @@
+.d1, .d2 {
+
+    background-image: url("CSS3_logo_and_wordmark.svg.png");
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 600px;
+}
+
+.d3, .d4 {  
+
+    background-image: url("https://www.google.com/imgres?q=HTML%20logo&imgurl=https%3A%2F%2Fwww.w3.org%2Fhtml%2Flogo%2Fdownloads%2FHTML5_Logo.svg&imgrefurl=https%3A%2F%2Fwww.w3.org%2Fhtml%2Flogo%2F&docid=SZyrCl7FlqYr9M&tbnid=EOr8DLvm3WKLYM&vet=12ahUKEwjE-MmM7cmTAxUq-AIHHWhJI9gQnPAOegQIGRAB..i&w=800&h=800&hcb=2&ved=2ahUKEwjE-MmM7cmTAxUq-AIHHWhJI9gQnPAOegQIGRAB");
+    height: 100%;
+    width: 100%;
+}
+
+.d5, .d6, .d7, .d8, .d9, .d10, .d11, .d12 {
+
+    background-image: url("CSS3_logo_and_wordmark.svg.png");
+    width: 200px;
+    height: 400px;
+}
+
+.d5, .d6 { background-repeat: repeat; }
+
+.d7, .d8 { background-repeat: no-repeat; }
+
+.d9, .d10 { background-repeat: repeat-x; }
+
+.d11, .d12 { background-repeat: repeat-y; }

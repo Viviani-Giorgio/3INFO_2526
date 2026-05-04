@@ -1,0 +1,19 @@
+
+
+  .bg1 {
+    background-image:url("/../../../../Scaricati/download.png");
+    color: white;
+    width: 250px;
+    height: 100px;
+  }
+
+  .bg2 {
+    background-image:url("/../../../../Scaricati/download.png");
+  }
+
+  #bg3 {
+    background-image:url("/../../../../Scaricati/download.png");
+    color: white;
+    width: 250px;
+    height: 100px;
+  }

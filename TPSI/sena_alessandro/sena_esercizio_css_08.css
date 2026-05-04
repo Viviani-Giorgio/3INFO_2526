@@ -1,0 +1,36 @@
+
+h1, h2, h3 {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
+
+p {
+    color: blue;
+    text-align: left;
+}
+
+/* Stile specifico per il terzo heading h2 */
+h2:nth-of-type(3) {
+    color: green;
+}
+
+
+p:nth-of-type(7) {
+    color: red;
+    text-align: right;
+}
+
+
+hr:nth-of-type(even) {
+    border: none;
+    background-color: black;
+    height: 10px;
+}
+
+hr:nth-of-type(odd) {
+    border: none;
+    background-color: red;
+    height: 3px;
+}

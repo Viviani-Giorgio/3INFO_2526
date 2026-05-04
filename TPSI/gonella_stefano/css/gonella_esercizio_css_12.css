@@ -1,0 +1,12 @@
+h1:first-child { 
+    color: blue;
+    text-decoration: underline;
+}
+
+h2:first-child {
+    color: red;
+}
+p {
+    color: red;
+    text-align: left;
+}

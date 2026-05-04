@@ -1,0 +1,47 @@
+:root{
+    --image-rel:url(./images.jpg);
+    --image-assoluta:url(https://forum.endeavouros.com/uploads/default/original/3X/7/0/70b9da1b62e548ca835c6e5d5fe07d8b85b6d299.png);
+}
+
+.pathRelativo{
+    background-image: var(--image-rel);
+    width: 200px;
+    height: 200px;
+}
+
+.pathAssoluto{
+    background-image:var(--image-assoluta);
+    width: 100%;
+    height: 30vh;
+}
+
+.repeat{
+    background-image: var(--image-rel);
+    width: 300px;
+    height: 200px;
+    background-repeat: repeat;
+}
+
+.norepeat{
+
+    background-image: var(--image-rel);
+    width: 4000px;
+    height: 200px;
+    background-repeat: no-repeat;
+}
+
+.repeatx{
+
+    background-image: var(--image-rel);
+    width: 4000px;
+    height: 200px;
+    background-repeat: repeat-x;
+}
+
+.repeaty{
+
+    background-image: var(--image-rel);
+    width: 200px;
+    height: 4000px;
+    background-repeat: repeat-y;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Il Mio Sito</title>
+</head>
+<body>
+        <h1>Il Mio Portfolio</h1>
+    
+        <h2>Chi sono?</h2>
+        <p>Ciao! Io sono Ludovico Bonifaccio e sono uno studente appassionato di informatica e progettazione.Ho anche tante altre passioni come la fotografia che mi ha aiutato a essere più responsabile con le consegne.
+            Pratico come sport il tennis e mi piace perchè mi aiuta a sfogare la frustazione e a fare ordine nella mia mente. In questo portfolio trovi tutti i miei progetti di PCTO che mi hanno dato le basi per essere più maturo
+            e responsabile non solo sul lavoro ma anche nella vita in generale.</p>
+
+        <h2>Progetti</h2>
+            <h3>Progetto 1 – La Voce</h3>
+            <img src="immagini/la_voce.jpg"  width="700" class="center-image">
+            <p>In questo progetto di PCTO mi sono occupato di gestire il sito, i social media e il comparto foto/video della rivista ufficiale dell'Istituto Edoardo Agnelli. <br>
+                Mi sono occupato di postare quasi tutto quello che accadeva nell'Istituto Edoardo Agnelli, sia su Instagram che su Facebook. Li ho postato anche tutte le nuove
+                edizioni della rivista, in cui erano presenti anche dei miei articoli e delle mie foto.<br>
+                Il sito sarebbe stata un ottima occasione per esercitarmi con html, però dato che molti colleghi con cui lavoravano non avevano la minima esperienza in capitolo, abbiamo 
+                dovuto realizzarlo in google sites per via della sua facilità d'uso.
+            </p>
+
+        <h2>Contatti</h2>
+        <p>Email: ludovicobonifaccio@istitutoagnelli.it</p>
+        <p>GitHub: <a href="https://github.com/Bonifaccio-Ludovico/MyWebSite" target="_blank">https://github.com/Bonifaccio-Ludovico/MyWebSite</a></p>
+        <p>IG:ludo_bonny</p>
+        <p>Whatsapp:+39 3477496611</p>
+            
+</body>
+</html>

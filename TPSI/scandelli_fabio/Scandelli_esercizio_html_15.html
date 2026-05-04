@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Esercizio 15</title>
+    </head>
+    <body>
+<form>
+  <fieldset>
+  <legend>Dati Personali</legend>
+  <label for="cgn">Cognome:</label>
+  <input type="text" id="cgn" name="cognome" size="40">
+
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" size="30">
+  <label for="matricola">Matricola:</label>
+  <input type="text" id="matricola" name="matricola" size="12">
+
+  <label for="regioni">Regioni Italiane: </label><br>
+  <input list="regionilist" name="regioni" id="regioni">
+  <datalist id="regionilist">
+      <option value="Piemonte">
+      <option value="Lombardia">
+      <option value="Veneto">
+      <option value="Toscana">
+      <option value="Lazio">
+      <option value="Sicilia">
+      <option value="Friuli Venezia Giulia">
+      <option value="Puglia"> 
+      <option value="Campania">
+      <option value="Sardegna">
+      <option value="Calabria">
+      <option value="Abruzzo">
+      <option value="Umbria">
+      <option value="Marche">
+      <option value="Emilia Romagna">
+      <option value="Trentino Alto Adige">
+      <option value="Liguria">
+      <option value="Basilicata">
+      <option value="Molise">
+      <option value="Valle d'Aosta">
+
+  </datalist>
+<label for="email">E-mail:</label>
+  <input type="text" id="email" name="email" size="30">
+  <label for="telefono">Telefono:</label>
+  <input type="text" id="telefono" name="telefono" size="30">
+  
+  <label for="rp">Richieste particolari:</label>
+  <textarea id="rp" name="richieste_particolari" rows="12" cols="60" placeholder="Inserisci le tue richieste particolari"></textarea>    
+
+</fieldset>   
+<button type="submit">Invio</button>
+<button type="reset">Reset</button>
+</form>
+    </body>
+</html>

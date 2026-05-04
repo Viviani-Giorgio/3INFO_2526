@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Esercizio_HTML_12</title>
+        <meta http-equiv="refresh" content="1">
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td> <label for="idnome">Nome: </label></td>
+                    <td> <input type="text" id="idnome" name="nome" maxlength="3" size="50" placeholder="Nome"></td>
+                </tr>
+                <tr>
+                    <td><label for="idcognome">Cognome: </label></td>
+                    <td><input type="text" id="idcognome" name="cognnome" placeholder="Cognome" maxlength="3" size="50"></td>
+                </tr>
+            </table>
+            <p> inserisci il tuo sesso:</p>
+            <input type="radio" id="Maschio" name="sesso" value="Maschio">
+            <label for="studente">  Maschio</label><br>
+            <input type="radio" id="Femmina" name="sesso" value="Femmina">
+            <label for="Femmina">  Femmina</label><br>
+            <br><br>
+            <label for="Università">Ateneo:
+                <select name="Univeristà" id="Università">
+                    <option value="Università degli Studi di Roma "> università degli studi </option>
+                    <option value="LUMSA "> università LUMSA </option>
+                    <option value="Foro italico"> foro italico </option>
+                </select>
+            </label>
+                <label for="bio">Biografia:</label>
+                <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Inserisci la tua biografia"></textarea> 
+        </form>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Dati Personali</title>
+    </head>
+    <body>
+        <form>
+        <label for="idnomeecognome"><b>Nome e Cognome</b>: </label>
+        <input type="text" id="idnomeecognome" name="nomi"><br><br>
+        <label for="genere"><b>Genere</b>:</label><br><br>
+        <input type="radio" id="maschio" name="genere">
+        <label for="maschio">Maschio </label>
+        <input type="radio" id="femmina" name="genere" >
+        <label for="femmina">Femmina </label><br><br>
+        <label for="email"><b>Email</b>:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="psw"><b>Password</b>: </label>
+        <input type="password" id="psw" name="psw"><br><br>
+        <label for="date"><b>Data di oggi</b>:</label>
+        <input type="date" id="date" name="data"><br><br>
+        <label for="nazio"><b>Nazionalità</b>: </label>
+        <input list="nazioni" name="nazio" id="nazio">
+        <datalist id="nazioni">
+            <option value="italiana">
+            <option value="francese">
+            <option value="tedesca">
+            <option value="spagnola">
+            <option value="inglese">
+            <option value="russa">
+            <option value="brasiliana">
+        </datalist><br><br>
+        <label for="lavoro"><b>Attività lavorativa</b>: </label>
+        <input type="text" id="lavoro" name="lavori"><br><br>
+        <label for="hobby"><b>Hobby</b>: </label>
+        <textarea id="hobby" name="hobby" rows="8" cols="40"></textarea><br><br>
+        <h3>Altezza:</h3>
+        <input type="number" id="altezza" name="altezza" min="150" max="220">
+        <label for="altezza">cm</label><br>
+        <h3>Peso:</h3>
+        <input type="number" id="peso" name="peso" min="50" max="160">
+        <label for="peso">kg</label>
+        <h3>Colore preferito:</h3>
+        <input type="color" id="colore" name="colore" value="#ff0000"><br><br>
+        <label for="note"><b>Note personali</b>: </label>
+        <textarea id="note" name="note" maxlength="40" size="40"></textarea><br><br>
+        </form>
+    </body>
+</html>

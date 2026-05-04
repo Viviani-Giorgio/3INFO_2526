@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Esercizio_HTML_16</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+            <legend>Dati Personali</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+          
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome"> <br> <br>
+          
+            <label for="genere">Genere:</label>
+            <select name="genere" id="genere">
+                <option value="maschio">Maschio</option>
+                <option value="femmina">Femmina</option>
+                <option value="non definito">X</option>
+            </select><br><br>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"> <br> <br>
+
+            <label for="pwd">Inserisci la tua password:</label>
+            <input type="password" id="pwd" name="pwd">  <br> <br>
+
+            <label for="date">inserisci la tua data di nascita: </label>
+            <input type="date" id="iddata" name="birthday"><br>
+
+            <label for="nazioni">Nazionalità: </label>
+                <input list="nations" name="nazioni" id="nazioni" placeholder="Scegli la tua nazionalità">
+                    <datalist id="nations">
+                        <option value="Piemonte">
+                        <option value="Valle d'Aosta">
+                        <option value="Liguia">
+                        <option value="lombardia">
+                        <option value="Trentino-Alto Aldige">
+                        <option value="Veneto">
+                        <option value="Friuli-Venezia Giulia">
+                        <option value="Emilia-Romagna">
+                        <option value="Toscana">
+                        <option value="Umbria">
+                        <option value="Marche">
+                        <option value="Lazio">
+                        <option value="Abruzzo">
+                        <option value="Molise">
+                        <option value="Campania">
+                        <option value="Basilicata">
+                        <option value="Puglia">
+                        <option value="Calabria">
+                        <option value="sicilia">
+                        <option value="sardegna">
+                    </datalist>
+
+                        <label for="lavoro">scrivi il tuo lavoro: </label>
+                        <textarea id="lavoro" name="lavoro" rows="4" cols="50" placeholder="Inserisci la tua Attività lavorativa"></textarea> <br> <br>
+
+                        <label for="hobby">scrivi i tuoi hobby: </label>
+                        <textarea id="Hobby" name="Hobby" rows="4" cols="50" placeholder="Inserisci Che Hobby hai"></textarea> <br> <br>
+
+                        <label for="altezza">scrivi la tua altezza: </label>
+                        <input type="number" id="altezza" name="altezza" min="150" max="200"><br><br>      
+
+                        <label for="peso">Inserisci il tuo Peso: </label>
+                        <input type="range" min="50" max="100" value="60" class="slider" id="peso"><br> 
+
+                        
+
+            <input type="submit" value="Invia">
+          </fieldset>      
+          </form>
+    </body>
+</html>

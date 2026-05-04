@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondaggio Videogames</title>
+</head>
+<body>
+
+    <h1>Sondaggio Sui VideoGames</h1>
+    
+    <p>Come ti chiami? E quanti anni hai?<br>
+        <form>
+            <label for="idNome">Nome:</label>
+            <input type="text" id="idNome" name="nome" placeholder="nome">
+            <br>
+            <label for="idData">Data di nascita</label>
+            <input type="date" id="idData" name="data">
+            <br>
+            <label for="prensentazione">Presentati</label>
+            <br>
+            <textarea id="presentazione" name="bio" rows="6" cols="60" placeholder="Inserisci la tua presentazione"></textarea>  
+            <br>
+            
+            <hr>
+
+            Hai mai giocato ad un videogame?
+
+            <br>
+            <label for="provaSi">Si</label>
+            <input type="radio" id="provaSi" name="prova" value="Si">
+            
+            <br>
+            <label for="provaNo">No</label>
+            <input type="radio" id="provaSi" name="prova" value="No">
+            <br>
+            <label for="noRisposta">Preferisco non rispondere</label>
+            <input type="radio" id="noRisposta" name="prova" value="Nessuna Risposta">
+            <br>
+            <label for="numeroVideogames">Quanti?</label>
+            <br>
+            <input type="number" id="numberoVideogames" name="numeroVideogames" min="0" max="100">
+            <br>
+            <hr>
+            
+            Quali di questi videogames ti sono piaciuti?
+            <br>
+
+            <label type="Eldenring">Eldenring</label>
+            <input type="checkbox" id="Eldenring" name="videogames" value="Eldenring">
+            <label for="votoV">vota il gioco</label>
+            <input type="number" id="votoV" name="numeroVideogames" min="0" max="10">
+            <br>
+            <label type="Sekiro">Sekiro</label>
+            <input type="checkbox" id="Sekiro" name="videogames" value="Sekiro">
+            <input type="number" id="votoV" name="numeroVideogames" min="0" max="10">
+            <br>
+            <label type="Fortnite">Fortnite</label>
+            <input type="checkbox" id="Fortnite" name="videogames" value="Fortnite">
+            <input type="number" id="votoV" name="numeroVideogames" min="0" max="10">
+            <br>
+            <label type="League Of Legends">League Of Legends</label>
+            <input type="checkbox" id="League Of Legends" name="videogames" value="League Of Legends">
+            <input type="number" id="votoV" name="numeroVideogames" min="0" max="10">
+            <br>
+            <label type="Hollow Knight">Hollow Knight</label>
+            <input type="checkbox" id="Hollow Knight" name="videogames" value="Hollow Knight">
+            <input type="number" id="votoV" name="numeroVideogames" min="0" max="10">
+            <br>
+            <br>
+            Qual'è stato il migliore? 
+            <br>
+            <label for="migliorVideogame">miglior videogame:</label>
+            <select name="migliorVideogame" id="migliorVideogame">
+            <option value="Eldenring">Eldenring</option>
+            <option value="Sekiro">Sekiro</option>
+            <option value="Fortnite">Fortnite</option>
+            <option value="League Of Legends">League Of Legends</option>
+            <option value="Hollow Knight">Hollow Knight</option>
+            </select>
+            <br>
+            <br>
+            Il peggiore invece?
+            <br>
+            <label for="peggiorVideogame">Peggior Videogame:</label>
+            <input list="nations" name="peggiorVideogame" id="peggiorVideogame">
+            <datalist id="nations">
+                <option value="Eldenring">
+                <option value="Sekiro">
+                <option value="Fortnite">
+                <option value="League Of Legends">
+                <option value="Hollow Knight">
+            </datalist>
+
+            <br><br>
+            Dai un voto alla tua esperienza Videoludica secondo i seguenti paramentri.
+            <br><br>
+            <label for="grafica">Grafica</label>
+            <input type="range" id="grafica" name="grafica" min="0" max="10" value="5" class="slider">
+            <br>
+            <label for="storia">Storia</label> 
+            <input type="range" id="storia" name="storia" min="0" max="10" value="5" class="slider">
+            <br>
+            <label for="divertimento">Divertimento</label> 
+            <input type="range" id="divertimento" name="storia" min="0" max="10" value="5" class="slider">
+            
+            <hr>
+
+            Per saperne di più su questo mondo clicca qua sotto!
+            <br>
+
+            <label for="Clicca">Mondo Videogames:</label>
+            <input type="button" id="Clicca" value="Clicca">
+            <br>
+            <br>
+            <label for="voto">Dai un voto al test:</label>
+            <input type="number" id="voto" name="numeroVideogames" min="0" max="10">
+            <br>
+            <label for="colore">Colore che più ti aggrada?</label>
+            <input type="color" id="colore" name="colore" value="ffffff">
+        </form>
+</p>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+/*<!-- seleziona tutti i tag <p> 
+  discendenti di un <div> -->*/
+
+p > mark {
+  color: green;
+}
+p > b {
+    color: yellow;
+    background-color: black;
+  }
+div  em {
+    background-color: yellow;
+}
+div  span {
+    color:black;
+    background-color: yellow;
+}

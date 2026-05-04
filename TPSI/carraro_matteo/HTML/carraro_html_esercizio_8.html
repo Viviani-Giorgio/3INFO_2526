@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>CARRARO TPSI</title>
+<meta name="author" content="Matteo Carraro" />
+<meta name="keywords" content="local host, name resolution, packet processing" />
+</head>
+<body>
+<h1>localhost</h1>
+<hr>
+<p>In computer networking, localhost is a hostname that refers to the current computer used to access it. It is used to access the network services that are running on the host via the loopback network interface. Using the loopback interface bypasses any local network interface hardware.</p>
+<h1>Loopback</h1>
+<hr>
+<p><u>local loopback mechanism</u>  may be used to run a <u>network</u> service on a <s>host</s> without requiring a physical network interface, or without making the service accessible from the networks the computer may be connected to. For example, <br>a locally installed website may be accessed from a Web browser by the URL http://localhost to display its home page.
+The name localhost normally resolves to the <bold>IPv4 loopback</bold> address 127.0.0.1, and to the IPv6 loopback address ::1.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/250px-Internet_map_1024.jpg"></img>
+<h1>Name resolution</h1>
+<hr>
+<p>IPv4 network standards reserve the entire address block &#49;&#50;&#55;.0.0.0/8 &#40;more than 16 million addresses&#41; for <s>loopback</s> purposes.[2] That means any packet sent to any of those addresses is looped back. The address 127.0.0.1 is the standard address for IPv4 loopback traffic; <br>the rest are not supported by all operating systems. However, they can be used to set up multiple server applications on the host, all listening on the same port number. The IPv6 standard assigns only a single address for loopback: ::1.
+The resolution of the name localhost to one or more IP addresses is normally configured by the following lines in the operating system's hosts file:
+<br><pre>127.0.0.1    localhost<br>
+::1          localhost</pre>
+<br>The name may also be resolved by Domain Name System (DNS) servers, <q>but queries for this name should be <s>resolved locally</s></q>, and should not be forwarded to remote name servers.
+
+In addition to the mapping of localhost to the <strong> addresses</strong> (127.0.0.1 and ::1), localhost may also be mapped to other IPv4 (loopback) addresses and it is also possible to assign other, or additional, names to any loopback address. The mapping of localhost to addresses other than the designated loopback address range in the hosts file or in DNS is not guaranteed to have the desired effect, as applications may map the name internally.
+In the <u>Domain Name System</u>, the name localhost is reserved as a <u>top-level</u> domain name, originally <s>set aside</s> to avoid confusion with the hostname used for loopback purposes.[3] IETF standards prohibit domain name registrars from assigning the name localhost.<br></p>
+<p>In contrast, the IETF <q>"IP Version 6 Addressing Architecture"</q> standard (RFC 4291) reserves the single IPv6 loopback address ::1 within the IPv6 address space. The standard precludes the assignment of that address to any physical interface, as well as its use as the source or destination address in any packet sent to remote hosts. Any such packet that is erroneously transmitted is not supposed to be routed, and should be dropped by all routers or hosts that receive it.</p>
+<a href="https://en.wikipedia.org/wiki/User_(computing)" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/250px-Operating_system_placement.svg.png" width="250" alt="Operating system"/></img>
+  </a>
+<h1>Packet processing</h1>
+<hr>
+<p><q>The processing of any packet sent to a loopback address, is implemented in the link layer of the TCP/IP stack</q>. Such packets are never passed to any network interface controller (NIC) or hardware device driver and must not appear outside of a computing system, or be routed by any router. This permits software testing and local services in the absence of any hardware network interfaces.</p>
+
+<p> <blockquote cite="https://en.wikipedia.org/wiki/Localhost"> are distinguished from any other packets traversing the TCP/IP stack <s>only by the special</s> IP address they were addressed to. Thus, the services that ultimately receive them respond according to the specified destination. For example, an HTTP service could route packets addressed to 127.0.0.99:80 and 127.0.0.100:80 to different Web servers, or to a single server that returns different web pages</blockquote>. To simplify such testing, the hosts file may be configured to provide appropriate names for each address.</p>
+
+<p>Packets received on a non-loopback interface with a loopback source or destination <abbr title="must be dropped"> must be dropped</abbr>. Such packets are sometimes referred to as Martian packets.[6] As with any other bogus packets, they may be malicious and any problems they might cause can be avoided by applying bogon filtering.</p>
+<h1>Special cases</h1>
+<hr>
+<p> <pre>The releases of the MySQL database differentiate between the use of the      "hostname localhost"     and the use of the addresses</pre> 127.0.0.1 and ::1.[7] When using localhost as the destination in a client connector interface of an application, the MySQL application programming interface connects to the database using a Unix domain socket, while a TCP connection via the loopback interface requires the direct use of the explicit address.
+One notable exception to the use of the 127.0.0.0/8 addresses is their use in Multiprotocol Label Switching (MPLS) traceroute error detection, in which their property of not being routable provides a convenient means to avoid delivery of faulty packets to end users.<br> </p>
+<h1>See also</h1>
+<hr>
+<ul>
+   <li><a href="https://en.wikipedia.org/wiki/Private_network" target="_blank">Private Network</a></li>
+   <li><a href="https://en.wikipedia.org/wiki/Reserved_IP_addresses" target="_blanck">Reserved IP adress</a></li> 
+   <li><a href="https://en.wikipedia.org/wiki/0.0.0.0" target="_blank">0.0.0.0</a></li>
+</ul>
+<h1>Refrences</h1>
+<hr>
+<ol>
+<li>S. Cheshire; M. Krochmal (February 2013). Special-Use Domain Names. Internet Engineering Task Force. doi:10.17487/RFC6761. ISSN 2070-1721. RFC 6761. Proposed Standard. Updates RFC 1918 and 2606. </li>
+<li>M. Cotton; L. Vegoda; B. Haberman (April 2013). R. Bonica (ed.). Special-Purpose IP Address Registries. Internet Engineering Task Force. doi:10.17487/RFC6890. ISSN 2070-1721. BCP 153. RFC 6890. Best Current Practice 153. Obsoletes RFC 4773, 5156, 5735 and 5736. Updated by RFC 8190.</li>
+<li> R. Hinden; S. Deering (February 2006). IP Version 6 Addressing Architecture. Network Working Group. doi:10.17487/RFC4291. RFC 4291. Draft Standard. Obsoletes RFC 3513. Updated by RFC 5952, 6052, 7136, 7346, 7371 and 8064.</li>
+<li>D. Eastlake; A. Panitz (June 1999). Reserved Top Level DNS Names. Network Working Group. doi:10.17487/RFC2606. BCP 32. RFC 2606. Best Current Practice 32. Updated by RFC 6761. </li>
+<li>J. Postel (September 1981). ASSIGNED NUMBERS. Network Working Group. doi:10.17487/RFC0790. RFC 790. Obsolete. Obsoleted by RFC 820. Obsoletes RFC 776, 770, 762, 758, 755, 750, 739, 604, 503, 433 and 349.Obsoletes IENs: 127, 117, 93. </li>
+</ol>
+<h2>Comandi git</h2>
+<hr>
+<p>Il comando per creare un file vuoto è <code>touch</code></p><br>
+<p>Il comando per creare una directory è <code>mkdir</code></p><br>
+<p>Il comando per spostarsi da un branch ad un altro è <code>git branch</code></p><br>  
+<h2>temperatura città italiane inverno</h2>
+<hr>
+torino <meter max="9" min="4" value="7">7 gradi attuali</meter><br />
+milano <meter max="11" min="5" value="6">6 gradi attuali</meter><br />
+napoli <meter max="13" min="5" value="8">8 gradi attuali</meter><br />
+giaveno <meter max="5" min="2" value="3">3 gradi attuali</meter><br />
+genova <meter max="21" min="9" value="10">10 gradi attuali</meter><br />
+<h2>temperatura città italiane estate</h2>
+<hr>
+torino <progress max="30" min="19" value="23">23 gradi attuali</progress><br />
+milano <progress max="25" min="11" value="16">16 gradi attuali</progress><br />
+napoli <progress max="33" min="15" value="18">18 gradi attuali</progress><br />
+giaveno <progress max="23" min="10" value="14">14 gradi attuali</progress><br />
+genova <progress max="29" min="17" value="25">25 gradi attuali</progress><br />

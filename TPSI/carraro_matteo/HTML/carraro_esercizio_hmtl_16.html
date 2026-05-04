@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+    <head>
+
+
+        <title>esercizio 16</title>
+
+
+    </head>
+
+
+    <body style="text-align: center;">
+
+
+        <h1>Raccolta dati</h1>
+
+
+        <p>Compila il documento con le tue informazioni personali</p>
+
+
+        <form>
+
+
+            <label for="idnome">Nome</label>
+
+
+            <input type="text" id="idnome" name="nome" placeholder="Nome"><br>
+
+
+            <label for="idcognome">Cognome</label>
+
+
+            <input type="text" id="idcognome" name="cognome" placeholder="Cognome">
+
+
+            <h3>Genere</h3><br>
+
+
+            <input type="radio" id="studente" name="genere" value="maschio">
+
+
+            <label for="maschio">Maschio</label><br>
+
+
+            <input type="radio" id="studente" name="genere" value="femmina">
+
+
+            <label for="femmina">Femmina</label><br>
+
+
+            <input type="radio" id="studente" name="genere" value="altro">
+
+
+            <label for="altro">Altro</label><br>
+
+
+            <input type="radio" id="studente" name="genere" value="non">
+
+
+            <label for="non">Preferisco non specificarlo</label><br>
+
+
+            <h3>Data di nascita</h3><br>
+
+
+            <input type="date"><br><br>
+
+            <label for="em">Email:</label>
+            <input type="email">
+            <label for="pass">Password:</label>
+            <input type="password">
+<hr><hr>
+            <h3>hobby</h3><br>
+            <input type="text">
+
+<hr><hr>
+
+            <label for="altezza">Altezza</label>
+            <input type="number" id="altezza" min="140" max="200" name="altezza"> <br><br>
+            
+            <label for="peso">Peso</label>
+            <input type="number" id="peso" min="30" max="100" name="peso"> <br><br>
+
+            <label for="color">Colore preferito</label>
+            <input type="color" id="color" value="#ff0011"><br><br>
+
+            <label for="nazione">Nazionalità</label><br>
+            <input list="nazione2" id="nazione" name="nazione">
+            <datalist id="nazione2">
+                <option value="Albanese">
+                <option value="Italiano">
+                <option value="Inglese">
+                <option value="Americano">
+                <option value="Francese">
+            </datalist><br><br><br>
+
+            <label for="lavoro">Attività lavorativa:</label>
+            <select name="lav" id="lavoro">
+                <option value="oc">Occupato</option>
+                <option value="ds">Disoccupato</option>
+                <option value="st">Studente</option>
+                <option value="sl">Scuola-lavoro</option>
+            </select><br><br><br>
+<hr><hr>
+            <label for="not">Note personali:</label>
+            <textarea for="not" rows="6" cols="60"></textarea>
+        </form>
+
+
+    </body>
+
+

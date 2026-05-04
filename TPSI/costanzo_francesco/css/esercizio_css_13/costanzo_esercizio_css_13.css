@@ -1,0 +1,11 @@
+td {
+    width: 100px;
+    height: 100px;
+    text-align:center;
+}
+
+tr:nth-child(odd) td:nth-child(odd), tr:nth-child(even) td:nth-child(even){
+
+    background-color: black;
+    color:white;
+}

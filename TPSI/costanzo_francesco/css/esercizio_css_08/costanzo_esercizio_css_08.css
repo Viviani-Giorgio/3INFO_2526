@@ -1,0 +1,29 @@
+h1, h2, h3 {
+    color:red;
+    text-decoration:underline;
+    text-decoration-color: grey;
+}
+
+p {
+    color:blue;
+    text-align: left;
+}
+
+#idh2Verde{
+    color:green;
+}
+
+#idP7{
+    color:red;
+    text-align: right;
+}
+
+.classHrPari{
+    color:black;
+    size:10px;
+}
+
+.classHrDispari{
+    color:red;
+    size: 3px;
+}

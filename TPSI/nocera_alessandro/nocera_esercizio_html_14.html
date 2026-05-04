@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Form con Widget Aggiuntivi</title>
+</head>
+<body>
+    <h1>Form con Widget Aggiuntivi</h1>
+    <form>
+        <label>Età: <input type="number" name="eta" min="18" max="99" required></label><br>
+        <label>Voto Esame 1: <input type="number" name="voto_esame1" min="18" max="30" required></label><br>
+        <label>Voto Esame 2: <input type="number" name="voto_esame2" min="18" max="30" required></label><br>
+        <label>Anno di Corso: <input type="number" name="anno_corso" min="1" max="5" required></label><br>
+
+        <label>Colore Preferito: <input type="color" name="colore_preferito" required></label><br>
+
+        <label>Soddisfazione (1-10): <input type="range" name="soddisfazione" min="1" max="10" required></label><br>
+        <label>Difficoltà (1-10): <input type="range" name="difficolta" min="1" max="10" required></label><br>
+        <label>Impegno (1-10): <input type="range" name="impegno" min="1" max="10" required></label><br>
+
+        <label>Corso di Laurea:
+            <select name="corso_laurea" required>
+                <option value="">Seleziona...</option>
+                <option value="informatica">Informatica</option>
+                <option value="ingegneria">Ingegneria Informatica</option>
+                <option value="matematica">Matematica</option>
+                <option value="fisica">Fisica</option>
+                <option value="elettronica">Ingegneria Elettronica</option>
+            </select>
+        </label><br>
+
+        <label>Università Frequentata:
+            <input list="universita" name="universita_frequentata" required>
+            <datalist id="universita">
+                <option value="Sapienza Università di Roma">
+                <option value="Università Tor Vergata">
+                <option value="Roma Tre">
+                <option value="Università di Bologna">
+                <option value="Politecnico di Milano">
+            </datalist>
+        </label><br>
+
+        <label>Descrizione Progetto:
+            <textarea name="descrizione_progetto" rows="6" cols="60" required></textarea>
+        </label><br>
+
+        <button type="submit">Invia</button>
+
+        <button type="reset">Resetta</button>
+    </form>
+</body>
+</html>

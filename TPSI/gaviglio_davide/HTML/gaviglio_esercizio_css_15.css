@@ -1,0 +1,46 @@
+.tab1 { height: 200px;
+        width: 400px;
+        background-color: red;
+}
+
+
+.tab2 { width: calc(100% *(1/4));
+        height: 150px;
+        background-color: blueviolet;
+}
+
+.tab3 { width: calc(100% *(2/4));
+    height: 150px;
+    background-color: blueviolet;
+}
+
+.tab4 { width: calc(100% *(3/4));
+    height: 150px;
+    background-color: blueviolet;
+}
+
+.tab5 { width: calc(100% *(4/4));
+    height: 150px;
+    background-color: blueviolet;
+}
+
+.tab6 { width: calc(100% *(1/8));
+    height: 221x;
+    background-color: rgba(23, 182, 84, 0.65);
+}
+
+.tab7 { width: calc(100% *(3/6));
+    height: 221px;
+    background-color: rgba(23, 182, 84, 0.65);
+}
+
+.tab8 { width: calc(100% *(5/8));
+    height: 221px;
+    background-color: rgba(23, 182, 84, 0.65);
+}
+
+.tab9 { width: calc(100% *(2/9));
+    height: 221px;
+    background-color: rgba(23, 182, 84, 0.65);
+}
+

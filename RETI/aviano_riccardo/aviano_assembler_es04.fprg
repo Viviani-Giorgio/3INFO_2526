@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="aviano_assembler_es04"/>
+        <attribute name="authors" value="rick"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-16 07:00:20 PM"/>
+        <attribute name="created" value="cmljaztSSUNLUEM7MjAyNS0xMS0xNjswNjo0NzoxMSBQTTsyMTUw"/>
+        <attribute name="edited" value="cmljaztSSUNLUEM7MjAyNS0xMS0xNjswNzowMDoyMCBQTTsxOzIyNDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, add, mul" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="2"/>
+            <assign variable="b" expression="2"/>
+            <if expression="a == b">
+                <then>
+                    <assign variable="mul" expression="a * b"/>
+                    <output expression="mul" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="add" expression="a + b"/>
+                    <output expression="add" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

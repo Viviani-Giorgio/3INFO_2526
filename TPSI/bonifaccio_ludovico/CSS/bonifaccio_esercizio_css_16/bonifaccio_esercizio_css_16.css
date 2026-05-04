@@ -1,0 +1,33 @@
+  .bg1 {
+    background-image:url("/home/3INFO_2526/TPSI/bonifaccio_ludovico/CSS/bonifaccio_esercizio_css_16/gorilla.jpg");
+  }
+
+  .bg2 {
+    background-image:url("papera.jpg");
+    color: white;
+    width: 250px;
+    height: 100px;
+}
+
+  .bg3 .bg4 .bg5 .bg6 .bg7{
+    background-image:url("gonella.jpg");
+    color: white;
+    width: 250px;
+    height: 100px;
+  }
+
+  .bg3{
+    background-repeat: repeat;
+  }
+
+    .bg4{
+    background-repeat: no-repeat;
+  }
+
+    .bg5{
+    background-repeat: repeat-x;
+  }
+
+    .bg6{
+    background-repeat: repeat-y;
+  }

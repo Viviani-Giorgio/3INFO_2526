@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <style>
+            body {background-color: rgb(255, 255, 255);}
+        </style>
+        <title>
+            Pagina FORM HTML
+        </title>
+    </head>
+    <body>
+        <h1>Iscrizione centro sportivo</h1>
+        <br><h2>Dati personali</h2>
+
+    
+        <form>
+            <label for="idnome">Nome: </label>
+            <input type="text" id="idnome" name="dati personali" placeholder="">
+            <label for="idcognome">Cognome: </label>
+            <input type="text" id="idcognome" name="dati personali" placeholder="">
+            <label for="iddata">Data di nascita: </label>
+            <input type="date" id="iddata" name="dati personali"><br>
+            <h2>Pratica</h2>
+            <input type="checkbox" id="calcio" name="pratica" value="calcio">
+            <label for="calcio">Calcio</label><br>
+            <input type="checkbox" id="basket" name="pratica" value="basket">
+            <label for="basket">Basket</label><br>
+            <input type="checkbox" id="nuoto" name="pratica" value="nuoto">
+            <label for="nuoto">Nuoto</label><br>
+            <input type="checkbox" id="tennis" name="pratica" value="tennis">
+            <label for="tennis">Tennis</label><br><br>
+            <h2>Sesso</h2>
+            <input type="radio" id="maschio" name="sesso" value="maschio">
+            <label for="maschio">Maschio</label><br>
+            <input type="radio" id="femmina" name="sesso" value="femmina">
+            <label for="tennis">Femmina</label><br>
+            <input type="radio" id="altro" name="sesso" value="altro">
+            <label for="altro">Altro</label><br><br>
+            <label for="idbutton">Invia form</label><br>
+            <input type="button" id="idbutton" value="invia form">
+        </form>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Form html</title>
+</head>
+
+<body>
+    <h1 align="center">Form</h1>
+    <form align="center">
+        
+        <label for="idcognome">Cognome: </label>
+        <input type="text" id="idcognome" name="cognome" maxlength="40"><br><br>
+        <label for="idnome">Nome: </label>
+        <input type="text" id="idnome" name="nome" maxlength="30"> <br><br>
+        <label for="matricola">Matricola: </label>
+        <input type="text" id="matricola" name="matricola" maxlength="12"><br><br>
+        <label for="regioni">Regione: </label>
+        <input list="list" name="regioni" id="regioni"> <br><br>
+        <datalist id="list">
+            <option value="Piemonte"></option>
+            <option value="Valle d'Aosta"></option>
+            <option value="Lombardia"></option>
+            <option value="Veneto"></option>    
+            <option value="Friuli venezia giulia"></option>
+            <option value="Liguria"></option>
+            <option value="Trentino alto adige"></option>
+            <option value="Emilia romagna"></option>
+            <option value="Toscana"></option>
+            <option value="Marche"></option>
+            <option value="Umbria"></option>
+            <option value="Lazio"></option>
+            <option value="Abruzzo"></option>
+            <option value="Molise"></option>
+            <option value="Campania"></option>
+            <option value="Puglia"></option>
+            <option value="Basilicata"></option>
+            <option value="Calabria"></option>
+            <option value="Sicilia"></option>
+            <option value="Sardegna"></option>  
+        </datalist><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" maxlength="30"><br><br>
+        <label for="telefono">Telefono: </label>
+        <input type="text" id="telefono" name="telefono" maxlength="15"><br><br>
+        <label for="richieste">Richieste particolari:  </label>
+        <textarea id="richieste" name="richieste" rows="12" cols="60"></textarea><br><br> 
+        <label for="idbutton"></label>
+        <input type="button" id="idbutton" value="invia" placeholder="Invio">
+        <label for="idbuttonn"></label>
+        <input type="reset" id="idbuttonn" value="reset" placeholder="Reset">
+        
+    </form>
+</body>
+
+</html>

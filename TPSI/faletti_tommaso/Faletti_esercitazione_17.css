@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principale: 1 riga per 4 colonne */
+.gallery-container {
+    display: flex;
+    gap: 20px; /* Spazio tra le celle */
+    justify-content: center;
+}
+
+/* Singola cella della gallery */
+.gallery-item {
+    background-color: white;
+    text-align: center;
+}
+
+/* Immagine con width 250px */
+.gallery-item img {
+    display: block;
+    width: 250px;
+    height: auto;
+}
+
+/* Didascalia con bordo rosso inferiore 5px e padding 8px */
+.gallery-item figcaption {
+    padding: 8px;
+    border-bottom: 5px solid red;
+    font-weight: bold;
+    color: #333;
+}

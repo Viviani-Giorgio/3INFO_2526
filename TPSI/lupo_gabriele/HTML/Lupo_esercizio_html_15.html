@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Esercizio_HTML_15</title>
+    </head>
+    <body>
+        <form>
+            <p>Inserisci i tuoi dati: </p>
+                <table>
+                    <tr>
+                        <td><label for="cognome">Cognome: </label></td>
+                        <td><input type="text" id="cognome" name="cognome" placeholder="Cognome" size="40"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="nome">Nome: </label></td>
+                        <td><input type="text" id="nome" name="nome" placeholder="Nome" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="matricola">Matricola: </td>
+                        <td><input type="text" id="matricola" name="matricola" placeholder="N. matricola" size="12"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="email">Email: </td>
+                        <td><input type="email" id="email" name="email" placeholder="Email" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="telefono">Telefono: </td>
+                        <td><input type="text" id="telefono" name="telefono" placeholder="N. telefono" size="15"></td>
+                    </tr>
+                </table>
+            <label for="regione">Inserisci la tua regione di residenza: </label>
+                <input list="regioni" name="regione" id="regione">
+                <datalist id="regioni">
+                    <option value="Val d'Aosta">
+                    <option value="Piemonte">
+                    <option value="Liguria">
+                    <option value="Lombardia">
+                    <option value="Trentino Alto-Adige">
+                    <option value="Veneto">
+                    <option value="Friuli Venezia-Giulia">
+                    <option value="Emilia Romagna">
+                    <option value="Toscana">
+                    <option value="Abruzzo">
+                    <option value="Marche">
+                    <option value="Umbria">
+                    <option value="Lazio">
+                    <option value="Puglia">
+                    <option value="Basilicata">
+                    <option value="Calabria">
+                    <option value="Sicilia">
+                    <option value="Sardegna">
+                    <option value="Molise">
+                    <option value="Campania">
+                </datalist> <br> <br>
+            <label for="richieste">Richieste particolari:</label> <br>
+                <textarea id="richieste" name="richieste" rows="12" cols="60" placeholder="Le mie richieste sono..."></textarea>
+            <br> <br>
+            <input type="reset">
+            <input type="submit">  
+        </form>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Iscrizione centro sportivo</title>
+</head>
+
+<body>
+    <h1 align="center">Iscrizione centro sportivo</h1>
+    <form align="center">
+        <h2>Dati personali:</h2>
+        <label for="idnome">Nome: </label>
+        <input type="text" id="idnome" name="nome"> <br><br>
+        <label for="idcognome">Cognome: </label>
+        <input type="text" id="idcognome" name="cognome"><br>
+
+
+        <h3>Data di nascita</h3>
+        <input type="date" id="iddata" name="birthday"> <br>
+        <h3>Altezza</h3>
+        <input type="number" id="altezza" name="altezza" min="150" max="220">
+        <label for="altezza">cm</label><br>
+        <h3>Peso</h3>
+        <input type="number" id="peso" name="peso" min="50" max="160">
+        <label for="peso">kg</label>
+        <h3>Lunghezza braccia</h3>
+        <input type="number" id="braccio" name="braccio" min="40" max="80">
+        <label for="braccio">cm</label>
+        <h3>Circonferenza cranio</h3>
+        <input type="number" id="cranio" name="cranio" min="30" max="60">
+        <label for="cranio">cm</label><br><br>
+        <label for="favcolor">Colore preferito</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <h3>Animali</h3>
+        <label for="cani">Quanto ti piacciono i cani</label>
+        <input type="range" min="50" max="100" value="75" id="cani">
+        <label for="gatti">Quanto ti piacciono i gatti</label>
+        <input type="range" min="50" max="100" value="75" id="gatti">
+        <label for="leoni">Quanto ti piacciono i leoni</label>
+        <input type="range" min="50" max="100" value="75" id="leoni">
+        <br><br><br>
+        <label for="sede"><b>Sede di appartenenza</b> :</label>
+        <select name="sede" id="sede">
+            <option hidden disabled selected value> -- Seleziona una sede --</option>
+            <option value="Torino">Torino</option>
+            <option value="Moncalieri">Moncalieri</option>
+            <option value="Chieri">Chieri</option>
+            <option value="Trofarello">Trofarello</option>
+            <option value="Cambiano">Cambiano</option>
+        </select><br><br>
+        <label for="nazioni"><b>Nazionalità</b>: </label><br>
+        <input list="nazio" name="nazioni" id="nazioni">
+        <datalist id="nazio">
+            <option value="Algerina">
+            <option value="Araba">
+            <option value="Belga">
+            <option value="Bielorussa">
+            <option value="Italiana">
+            <option value="Islandese">
+            <option value="Israeliana">
+        </datalist>
+        <h3>Sport</h3>
+        <input type="checkbox" id="calcio" name="sport" value="calcio">
+        <label for="calcio">Calcio</label>
+        <input type="checkbox" id="basket" name="sport" value="basket">
+        <label for="basket">Basket</label>
+        <input type="checkbox" id="tennis" name="sport" value="tennis">
+        <label for="tennis">Tennis</label>
+        <input type="checkbox" id="nuoto" name="sport" value="nuoto">
+        <label for="nuoto">Nuoto</label>
+        <input type="checkbox" id="ping pong" name="sport" value="ping pong">
+        <label for="ping pong">Ping pong</label><br><br>
+        <label for="descrizione"><b>Note</b> :</label><br>
+        <textarea id="descrizione" name="descrizione" rows="6" cols="60" placeholder="Descrizione di te stesso"></textarea><br><br>
+        <label for="idbutton">Invio form</label>
+        <input type="button" id="idbutton" value="invia">
+
+    </form>
+</body>
+
+</html>

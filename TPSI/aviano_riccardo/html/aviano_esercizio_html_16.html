@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <style>
+            body {background-color: rgb(255, 255, 255);}
+        </style>
+        <title>
+            Pagina FORM HTML
+        </title>
+    </head>
+    <body>
+        <h1>Anagrafe</h1>
+
+    
+        <form align="center">
+            <h2>Dati personali</h2>
+            <label for="idcognome"><b>Cognome:</b> </label>
+            <input type="text" id="idcognome" name="dati personali"><br>
+            <label for="idnome"><b>Nome:</b></label>
+            <input type="text" id="idnome" name="dati personali"><br>
+            <h2>Genere</h2>
+            <input type="radio" id=maschio name="dati personali">
+            <label for="maschio">Maschio</label>
+            <input type="radio" id="femmina" name="dati personali">
+            <label for="femmina">Femmina</label><br><br>
+            <label for="iddata"><b>Data di nascita</b></label>
+            <input type="date" id="iddata" name="birthday"><br><br>
+            <label for="nazioni"><b>Nazionalità d'origine</b></label>
+            <input list="nazione" name="regioni" id="nazioni">
+            <datalist id="nazione">
+                <option value="Albania">
+                <option value="Andorra">
+                <option value="Belgio">
+                <option value="Brasile">
+                <option value="Veneto">
+                <option value="Cile">
+                <option value="Croazia">
+                <option value="Danimarca">
+                <option value="Egitto">
+                <option value="Francia">
+                <option value="Grecia">
+                <option value="Germania">
+                <option value="Irlanda">
+                <option value="Italia">
+                <option value="Libia">
+                <option value="Messico">
+                <option value="Nuova Zelanda">
+                <option value="Polonia">
+                <option value="Russia">
+                <option value="Serbia">
+                <option value="Togo">
+                <option value="Vaticano">
+            </datalist><br><br>
+            <label for="idlavoro"><b>Attività lavorativa:</b></label>
+            <input type="text" id="idlavoro" name="dati personali"><br>
+            <label for="hobby"><b>Hobby</b></label>
+            <textarea id="hobby" name="hobby" rows="8" cols="40" placeholder="--Hobby--"></textarea><br>
+            <h3>Altezza</h3>
+            <input type="number" id="altezza" name="dati personali" min="150" max="220">
+            <label for="altezza">cm</label><br>
+            <h3>Peso</h3>
+            <input type="number" id="peso" name="dati personali" min="0" max="600">
+            <label for="altezza">kg</label><br>
+            <h3>Colore preferito</h3>
+            <input type="color" id="colore preferito" name="dati personali"><br><br>
+            <label for="note personali"><b>Note Personali</b></label>
+            <textarea id="note personali" name="dati personali" rows="12" cols="60" placeholder="--Note personali--"></textarea><br>
+            <h2>Dati sensibili</h2>
+            <label for="idemail"><b>email</b></label>
+            <input type="email" id="idemail" name="dati personali"><br>
+            <label for="pwd"><b>Password</b></label>
+            <input type="password" id="pwd" name="pwd"><br>
+        </form>

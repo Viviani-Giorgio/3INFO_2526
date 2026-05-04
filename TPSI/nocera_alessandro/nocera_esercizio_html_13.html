@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-८">
+    <title>Form Studente</title>
+</head>
+<body>
+    <h1>Form Studente</h1>
+    <form>
+        <label>Cognome e Nome: <input type="text" name="cognome_nome" maxlength="50" required></label><br>
+
+        <p>Sesso:</p>
+        <label><input type="radio" name="sesso" value="maschio" required> Maschio</label>
+        <label><input type="radio" name="sesso" value="femmina"> Femmina</label><br>
+
+        <label>Ateneo:
+            <select name="ateneo" required>
+                <option value="">Seleziona...</option>
+                <option value="sapienza">Sapienza Università di Roma</option>
+                <option value="torvergata">Università Tor Vergata</option>
+                <option value="roma_tre">Roma Tre</option>
+            </select>
+        </label><br>
+
+        <label>CAP: <input type="text" name="cap" maxlength="5" required></label><br>
+
+        <label><input type="checkbox" name="studente_lavoratore" value="si"> Studente lavoratore</label><br>
+
+        <label>Descrizione lavoro svolto: <input type="text" name="descrizione_lavoro" maxlength="80"></label><br>
+
+        <button type="submit">Invia</button>
+
+        <button type="reset">Resetta</button>
+    </form>
+</body>
+</html>

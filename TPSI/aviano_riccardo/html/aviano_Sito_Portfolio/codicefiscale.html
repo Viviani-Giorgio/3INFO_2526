@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Riccardo Aviano Portfolio</title>
+  </head>
+  <body>
+    <h1>Portfolio</h1>
+    <h4><a href="index.html">Home</a></h4>
+    <h4><a href="chisono.html">Chi sono</a></h4>
+    <h4><a href="esperienze.html">Esperienze</a></h4>
+    <h4><a href="pcto.html">PCTO</a></h4>
+    <h4><a href="educazionecivica.html">Educazione Civica</a></h4>
+    <hr>
+    <h1>Progetto Codice Fiscale</h1>
+    <p>
+        Come progetto di Educazione Civica la professoressa Arruzza ci ha chiesto di creare un programma in linguaggio C che leggesse i dati dell'utente e creasse il codice fiscale. <br>
+        In questa sezione vado a spiegare il codice, come funziona e cosa ho usato per fare determinate cose. <br>
+    </p>
+
+    <table border="1" align="center" widht="100%">
+        <tr align="center">
+            <td>
+                <h2>Codice</h2>
+            </td>
+            <td>
+                <h2>Spiegazione</h2>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <pre>
+                    <code>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+#define N 50
+
+char cf[17];
+
+void inserisci_cognome();
+void inserisci_nome();
+int inserisci_anno();
+void inserisci_mese();
+int inserisci_giornoSesso(int anno, char letteraMese);
+void inserisci_comune();
+void carattereControllo();</code>
+                </pre>
+            </td>
+            <td>
+                <p>Qui dichiaro le librerie necessarie al funzionamento delle funzioni che ho inserito nel codice, le costanti, un array globale che mi serve per inserire il codice fiscale completo e i prototipi delle funzioni</p>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <pre>
+                    <code>
+int main()
+{
+    inserisci_cognome();
+    inserisci_nome();
+    int risultato_anno = inserisci_anno();
+    inserisci_mese();
+    int risultato_giorno = inserisci_giornoSesso(risultato_anno, cf[8]);
+    inserisci_comune();
+
+    char temp[3]; // Variabile temporanea per riempire gli spazi in cf
+    sprintf(temp, "%02d", risultato_anno); 
+    cf[6] = temp[0]; cf[7] = temp[1]; 
+    
+    sprintf(temp, "%02d", risultato_giorno); // Sovrascrive temp
+    cf[9] = temp[0]; cf[10] = temp[1];
+
+    carattereControllo();
+
+    printf("Il tuo codice fiscale completo vale: %s", cf);
+
+    return 0;
+}
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <p>Qui troviamo il main. Nel main passo tutte le funzioni e stampo il codice fiscale completo.</p>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <pre>
+                    <code>
+void inserisci_cognome()
+{
+    char cognome[N];
+    char c[N];
+    char v[N];
+    int cons = 0;
+    int voc = 0;
+
+    printf("===CODICE FISCALE MENU===\n");
+    printf("Inserisci il tuo cognome: ");
+    scanf("%s", cognome);
+
+    for (int i = 0; cognome[i] != '\0'; i++)
+    {
+        cognome[i] = toupper(cognome[i]);
+
+        if (cognome[i] != 'A' && cognome[i] != 'E' && cognome[i] != 'I' && cognome[i] != 'O' && cognome[i] != 'U')
+        {
+            c[cons] = cognome[i];
+            cons = cons + 1;
+        }
+        else if (cognome[i] == 'A' || 'E' || 'I' || 'O' || 'U')
+        {
+            v[voc] = cognome[i];
+            voc = voc + 1;
+        }
+    }
+
+    if (cons >= 3)
+    {
+        cf[0] = c[0]; // Prima consonante
+        cf[1] = c[1]; // Seconda consonante
+        cf[2] = c[2]; // Terza consonante
+    }
+    else if (cons < 3)
+    {
+        cf[0] = c[0]; // Prima consonante
+        cf[1] = c[1]; // Seconda consonante
+        cf[2] = v[0]; // Prima vocale
+    }
+    else if (cons < 2)
+    {
+        cf[0] = c[0]; // Prima consonante
+        cf[1] = v[0]; // Prima vocale
+        cf[2] = v[1]; // Seconda vocale
+    }
+    else if (cons == 1 && voc == 1)
+    {
+        cf[0] = c[0]; // Prima consonante
+        cf[1] = v[0]; // Prima vocale
+        cf[2] = 'X';  // X
+    }
+}
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <p>In questa parte di codice abbiamo la prima funzione, ovvero quella per prendere le lettere del cognome. Con i vari if ed else if sono andato a controllare i caratteri compresi nell'array. Successivamente a inserire ciò che mi serve nell'array globale del Codice Fiscale.</p>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <pre>
+                    <code>
+void inserisci_nome()
+{
+    char nome[N];
+    char c[N];
+    char v[N];
+    int cons = 0;
+    int voc = 0;
+
+    printf("Inserisci il tuo nome: ");
+    scanf("%s", nome);
+
+    for (int i = 0; nome[i] != '\0'; i++)
+    {
+        nome[i] = toupper(nome[i]);
+
+        if (nome[i] != 'A' && nome[i] != 'E' && nome[i] != 'I' && nome[i] != 'O' && nome[i] != 'U')
+        {
+            c[cons] = nome[i];
+            cons = cons + 1;
+        }
+
+        else if (nome[i] == 'A' || nome[i] == 'E' || nome[i] == 'I' || nome[i] == 'O' || nome[i] == 'U')
+        {
+            v[voc] = nome[i];
+            voc = voc + 1;
+        }
+    }
+
+    if (cons >= 4)
+    {
+        cf[3] = c[0]; // Prima consonante
+        cf[4] = c[2]; // Terza consonante
+        cf[5] = c[3]; // Quarta consonante
+    }
+    else if (cons == 3)
+    {
+        cf[3] = c[0]; // Prima consonante
+        cf[4] = c[1]; // Seconda consonante
+        cf[5] = c[2]; // Terza consonante
+    }
+    else if (cons == 2)
+    {
+        cf[3] = c[0]; // Prima consonante
+        cf[4] = c[1]; // Seconda consonante
+        cf[5] = v[0]; // Prima vocale
+    }
+    else if (cons == 1)
+    {
+        cf[3] = c[0]; // Prima consonante
+        cf[4] = v[0]; // Prima vocale
+        cf[5] = v[1]; // Seconda vocale
+    }
+    else if (cons == 1 && voc == 1)
+    {
+        cf[3] = c[0]; // Prima consonante
+        cf[4] = v[0]; // Prima vocale
+        cf[5] = 'X';  // X
+    }
+}
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <p>Nella funzione del nome troviamo le stesse procedure iniziali che nella funzione del cognome ma verificando ciò che mi serve inserire nel nome. Come possiamo notare ho usato un else if in più.</p>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <pre>
+                    <code>
+int inserisci_anno()
+{
+    int anno;
+
+    printf("Inserisci il tuo anno di nascita: ");
+    scanf("%d", &anno);
+
+    while (anno < 1900 || anno >= 2027)
+    {
+        printf("Inserisci un anno MAGGIORE o UGUALE a 1900 o MINORE di 2027: ");
+        scanf("%d", &anno);
+    }
+
+    if (anno < 2000)
+    {
+        anno = anno - 1900;
+    }
+    else
+    {
+        anno = anno - 2000;
+    }
+
+    return anno;
+}         
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <p>Nella funzione dell'anno vado a verificare che l'anno inserito non superi l'anno corrente (in questo momento il 2026) e poi faccio un calcolo per recuperarmi le ultime due cifre.</p>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <pre>
+                    <code>
+void inserisci_mese()
+{
+    int mese;
+    char letteraMese;
+
+    printf("Inserisci il tuo mese di nascita in numeri (es: Gennaio = 01): ");
+    scanf("%d", &mese);
+
+    switch (mese)
+    {
+    case 1:
+        letteraMese = 'A';
+        break;
+    case 2:
+        letteraMese = 'B';
+        break;
+    case 3:
+        letteraMese = 'C';
+        break;
+    case 4:
+        letteraMese = 'D';
+        break;
+    case 5:
+        letteraMese = 'E';
+        break;
+    case 6:
+        letteraMese = 'H';
+        break;
+    case 7:
+        letteraMese = 'L';
+        break;
+    case 8:
+        letteraMese = 'M';
+        break;
+    case 9:
+        letteraMese = 'P';
+        break;
+    case 10:
+        letteraMese = 'R';
+        break;
+    case 11:
+        letteraMese = 'S';
+        break;
+    case 12:
+        letteraMese = 'T';
+        break;
+    default:
+        break;
+    }
+
+    cf[8] = letteraMese;
+}       
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <p>Nella funzione del mese ho utilizzato uno switch case per controllare il mese inserito, assegnarli la lettera corrispondente e rendere più efficacie e pulito il codice. Alla fine di tutto sono andato a salvare nell'array globale</p>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <pre>
+                    <code>
+int inserisci_giornoSesso(int anno, char letteraMese)
+{
+    int giorno;
+    int max_giorni;
+    char sesso;
+
+    if (letteraMese == 'B')
+    {
+        if (anno % 4 == 0 && anno != 0)
+        {
+            max_giorni = 29;
+        }
+        else
+        {
+            max_giorni = 28;
+        }
+    }
+    else if (letteraMese == 'D' || letteraMese == 'H' || letteraMese == 'P' || letteraMese == 'S')
+    {
+        max_giorni = 30;
+    }
+    else
+    {
+        max_giorni = 31;
+    }
+
+    printf("Inserisci il tuo giorno di nascita: ");
+    scanf("%d", &giorno);
+
+    while (giorno < 1 || giorno > max_giorni)
+    {
+        printf("Errore! Per questo mese il giorno deve essere tra 1 e %d.\n", max_giorni);
+        printf("Inserisci un giorno valido: ");
+        scanf("%d", &giorno);
+    }
+
+    printf("Inserisci la lettere del tuo sesso (es: maschio = M): ");
+    scanf(" %c", &sesso);
+    sesso = toupper(sesso);
+
+    if (sesso == 'F')
+    {
+        giorno = giorno + 40;
+    }
+
+    return giorno;
+}      
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <p>Nella funzione dedicata al giorno mi sono concentrato in primis sul verificare che il giorno inserito corrisponda con i giorni presenti nei mesi ovvero che nei mesi che hanno 30 giorni, per esempio, l'utente non dichiarasse di essere nato il 31 dato che è impossibile, come per febbraio ho dovuto controllare che l'anno inserito in precedenza fosse o meno bisestile per capire se l'utente possa essere nato il 29 e questa verifica comporta anche la verifica che un utente non nasca il giorno zero. Dopodichè ho verificato il sesso. Questa verifica va fatta e ho scelto di farla nella stessa funzione del giorno, perché in caso di sesso femminile, al giorno di nascita, va aggiunto 40.</p>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <pre>
+                    <code>
+void inserisci_comune()
+{
+    char comune[N];
+    char codice[N];
+    char provincia[N];
+    char tmpcomune[N];
+    int trovato = 0;
+
+    printf("Inserisci il tuo comune di nascita: ");
+    scanf("%s", comune);
+
+    for (int i = 0; comune[i] != '\0'; i++)
+    {
+        comune[i] = toupper(comune[i]);
+    }
+
+    FILE *f = fopen("../comuni.txt", "r");
+    if (f == NULL)
+    {
+        printf("Errore! File comuni.txt non trovato.\n");
+        return;
+    }
+
+    while (fscanf(f, " %[^,],%[^,],%s", codice, provincia, tmpcomune) != EOF) // %[^,] → legge fino alla virgola, %d → numero,  %s → stringa
+    {
+
+        if (strcmp(comune, tmpcomune) == 0) // strcmp confornta 2 stringhe carattere per carattere
+        {
+            cf[11] = codice[0];
+            cf[12] = codice[1];
+            cf[13] = codice[2];
+            cf[14] = codice[3];
+            trovato = 1;
+            break;
+        }
+    }
+
+    fclose(f);
+
+    if (trovato == 0)
+    {
+        printf("Il codice di %s non risulta nel database!\n", comune);
+    }
+}         
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <p>Siamo arrivati alla funzione dedicata al file. Questa funzione è stata una delle più difficili da realizzare per me perché per inserire il codice del comune nel codice fiscale abbiamo creato un file txt dove all'interno abbiamo inserito codice, provincia e nome del comune. Ho avuto molti problemi con alcuni comuni che però sono riuscito a risolvere, anche se fuori tempi di consegna. Le funzionalità principali della funzione del comune, oltre ad aprire e verificare che il file esista, sono: <i>fscanf</i> all'interno del <i>while</i>, che permette di scorrere e leggere il file e <i>strcmp</i> che permette di conforntare le stringhe e trovare il comune inserito.</p>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <pre>
+                    <code>
+void carattereControllo()
+{
+    char caratteri_cf[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E',<br>'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'}; // Tutto ciò che può esserci nel CF
+    int tab_disp[] = {1, 0, 5, 7, 9, 13, 15, 17, 19, 21, 1, 0, 5, 7, 9, 13, <br>15, 17, 19, 21, 2, 4, 18, 20, 11, 3, 6, 8, 12, 14, 16, 10, 22, 25, 24, 23}; // Valori in caso di posizione dispari
+    int somma = 0;
+
+    for (int i = 0; i < 15; i++)
+    {
+        for (int j = 0; j < 36; j++)
+        {
+            if (caratteri_cf[j] == cf[i])
+            {
+                if ((i + 1) % 2 != 0)
+                {
+                    somma = somma + tab_disp[j];
+                }
+                else
+                {
+                    if (j < 10)
+                        somma = somma + j; // Per i numeri
+                    else
+                        somma = somma + (j - 10); // Per le lettere
+                }
+                break;
+            }
+        }
+    }
+
+    cf[15] = (somma % 26) + 'A'; // Scrive l'ultimo carattere
+}       
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <p>Giungiamo dunque alla funzione finale, ovvero il carattere di controllo. <br> Il carattere di controllo è quel carattere che si trova alla fine del codice fiscale. Per crearlo è necessario usare tutto ciò che è presente nel codice fiscale prima di lui, quindi nelle celle dell'array globale prima della sua. La funzione scorre i primi quindici caratteri e, per ognuno, ne ricava un valore numerico in base alla sua posizione. Se il carattere si trova in una posizione dispari, viene usato un punteggio specifico preso da una tabella fissa, mentre per le posizioni pari il calcolo è più semplice e diretto. Tutti questi valori vengono sommati tra loro e, alla fine, il totale viene diviso per 26. Il resto di questa divisione corrisponde a una precisa lettera dell'alfabeto, che viene calcolata e inserita nell'ultima posizione dell'array per completare ufficialmente il codice fiscale.</p>
+            </td>
+        </tr>
+    </table>
+  </body>
+</html>

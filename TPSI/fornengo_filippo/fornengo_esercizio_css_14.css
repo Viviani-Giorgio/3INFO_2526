@@ -1,0 +1,24 @@
+#cella
+{
+    background-color: #1D3461;
+}
+#cella1
+{
+    background-color: steelblue;
+}
+#cella2
+{
+    background-color: rgb(55, 105, 150);
+}
+#cella3
+{
+    background-color: rgba(98, 144, 200, 1);
+}
+#cella4
+{
+    background-color: hsl(213, 30, 62);
+}
+#cella5
+{
+    background-color: hsla(214, 61, 31, 1);
+}

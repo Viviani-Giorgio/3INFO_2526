@@ -1,0 +1,54 @@
+/* Stile base per vedere tutto chiaramente */
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+/* 1. Path relativo + dimensioni assolute */
+.d1, .d2 {
+    background-image: url("sfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+}
+
+/* 2. Path assoluto + dimensioni relative */
+.d3, .d4 {
+    background-image: url("https://cdn.wallpapersafari.com/15/5/BL4mah.jpg");
+    background-size: cover;
+    width: 45%;
+    height: 150px;
+}
+
+/* Base per tutti i test repeat */
+.d5, .d6, .d7, .d8, .d9, .d10, .d11, .d12 {
+    background-image: url("sfondo.jpg");
+    width: 200px;
+    height: 200px;
+}
+
+/* 3. repeat */
+.d5, .d6 {
+    background-repeat: repeat;
+}
+
+/* 4. no-repeat */
+.d7, .d8 {
+    background-repeat: no-repeat;
+}
+
+/* 5. repeat-x */
+.d9, .d10 {
+    background-repeat: repeat-x;
+}
+
+/* 6. repeat-y */
+.d11, .d12 {
+    background-repeat: repeat-y;
+}

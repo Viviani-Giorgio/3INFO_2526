@@ -1,0 +1,79 @@
+.div1 {
+    width: 250px;
+    height: 250px;
+    background-image: url("./colors.png");
+}
+
+.div2 {
+    width: 250px;
+    height: 250px;
+    background-image: url("./colori.png");
+}
+
+.div3 {
+    width: 50%;
+    height: 330px;
+    background-image: url("https://studio.pinotspalette.com/southhill/images/southihill-color22.jpg");
+}
+
+.div4 {
+    width: 25%;
+    height: 230px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgZ8539YUOeAQPtTF9fVZK2oQhQXwfXtbQTA&s");
+}
+
+.div5 {
+    width: 500px;
+    height: 500px;
+    background-image: url("./colors.png");
+    background-repeat: repeat;
+}
+
+.div6 {
+    width: 500px;
+    height: 500px;
+    background-image: url("./colori.png");
+    background-repeat: repeat;
+}
+
+.div7 {
+    width: 500px;
+    height: 500px;
+    background-image: url("./colors.png");
+    background-repeat: no-repeat;
+}
+
+.div8 {
+    width: 500px;
+    height: 500px;
+    background-image: url("./colori.png");
+    background-repeat: no-repeat;
+}
+
+.div9 {
+    width: 1000px;
+    height: 500px;
+    background-image: url("./colors.png");
+    background-repeat: repeat-x;
+}
+
+.div10 {
+    width: 1000px;
+    height: 500px;
+    background-image: url("./colori.png");
+    background-repeat: repeat-x;
+}
+
+.div11 {
+    width: 500px;
+    height: 1000px;
+    background-image: url("./colors.png");
+    background-repeat: repeat-y;
+}
+
+.div12 {
+    width: 500px;
+    height: 1000px;
+    background-image: url("./colori.png");
+    background-repeat: repeat-y;
+}

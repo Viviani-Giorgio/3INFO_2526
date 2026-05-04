@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it" >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="esercizio"/>
+<meta name="author" content="Lageard Edoardo">
+<title>Esercitazione 16</title>
+</head>
+<h1></h1>
+<style>
+body{background-color:rgb(255, 255, 255);}
+h1{color:rgb(0, 0, 0);}
+</style>
+<body>
+    <h1>ESERCITAZIONE 16</h1>
+    <form>
+    <label for="idnome">Nome: </label><br></br>
+    <input type="text" id="idnome" name="nome" placeholder="Nome" size="30"><br></br>
+    <label for="idcognome">Cognome: </label><br></br>
+    <input type="text" id="idcognome" name="cognnome" placeholder="Cognome" size="40"><br></br>
+  
+
+    <label for="idnome">Email: </label><br></br>
+    <input type="text" id="idmatricola" name="email" placeholder="Email" size="30"><br></br>
+    <label for="idnome">Telefono: </label><br></br>
+    <input type="text" id="idmatricola" name="telefono" placeholder="Telefono" size ="15"><br></br>
+    
+    <h3>Data di Nascita:</h3><br>
+    <input type="date" id="iddata" name="birthday"><br><br>
+    
+    <label for="nazioni">Nazionalità: </label><br>
+    <input list="nations" name="nazioni" id="nazioni">
+    <datalist id="nations">
+        <option value="Albania">
+        <option value="Argentina">
+        <option value="Brasile">
+        <option value="Croazia">
+        <option value="Cina">
+        <option value="Danimarca">
+        <option value="Francia">
+        <option value="Finlandia">
+        <option value="Germania">
+        <option value="Italia">
+        <option value="Inghilterra">
+        <option value="Lituania">
+        <option value="Portogallo">
+        <option value="Spagna">
+        <option value="Svezia">
+        <option value="USA">
+        <option value="Ucraina">
+        <option value="Ungheria">
+        <option value="Olanda">
+        <option value="Grecia">
+    </datalist><br></br>
+
+    <label for="bio">Attività lavorativa:</label><br></br>
+    <textarea id="bio" name="bio" rows="12" cols="60" placeholder="Inserisci la tua attività"></textarea>   <br></br> 
+
+    <label for="bio">Hobby:</label><br></br>
+    <textarea id="bio" name="bio" rows="12" cols="60" placeholder="Inserisci i tuoi hobby"></textarea>   <br></br> 
+
+    <h3>Altezza:</h3><br>
+    
+    <input type="number" id="altezza" name="altezza" min="140" max="220"><br><br>
+
+    <label for="peso">Peso</label><br><br>
+    <input type="range" min="50" max="150" value="60" class="slider" id="peso"><br> </br>
+
+    <h3>Colore preferito:</h3><br>
+    
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+ 
+    <label for="bio">Biografia:</label><br></br>
+    <textarea id="bio" name="bio" rows="12" cols="60" placeholder="Inserisci la tua biografia"></textarea>   <br></br> 
+  
+
+
+    </form>
+</body>
+</html>

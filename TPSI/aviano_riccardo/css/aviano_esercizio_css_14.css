@@ -1,0 +1,23 @@
+#id1 {
+    background-color: blue;
+}
+
+#id2 {
+    background-color: #166BB1;
+}
+
+#id3 {
+    background-color: rgb(81, 144, 197);
+}
+
+#id4 {
+    background-color: rgba(197, 218, 236, 0.5);
+}
+
+#id5 {
+    background-color: hsl(207, 51, 89);
+}
+
+#id6 {
+    background-color: hsla(210, 56, 96, 0.7);
+}

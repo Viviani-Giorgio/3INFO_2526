@@ -1,0 +1,28 @@
+
+.box-rosso {
+    background-color: rgb(218, 35, 35);
+    width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.viola {
+    background-color: rgb(145, 8, 145);
+    height: 150px;
+    margin-bottom: 10px;
+}
+.v1 { width: 25%; }  
+.v2 { width: 50%; } 
+.v3 { width: 75%; }  
+.v4 { width: 100%; } 
+
+
+.verde {
+    background-color: rgba(16, 129, 16, 0.65); 
+    height: 221px;
+    margin-bottom: 10px;
+}
+.g1 { width: 12.5%; }    
+.g2 { width: 50%; }      
+.g3 { width: 62.5%; }    
+.g4 { width: 22.22%; }   

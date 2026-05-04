@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Esercizio_HTML_14</title>
+    </head>
+    <body>        
+        <form>
+            <p>Inserisci il tuo nome e cognome: </p>
+                <table>
+                    <tr>
+                        <td align="right"><label for="idnome">Nome: </label></td>
+                        <td><input type="text" id="idnome" name="nome" placeholder="Nome"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="idcognome">Cognome: </label></td> 
+                        <td><input type="text" id="idcognome" name="cognome" placeholder="Cognome"></td>        
+                    </tr>                 
+                </table>
+            <p>Inserisci la tua classe: </p>         
+                <input type="radio" id="1°" name="classe" value="1°">
+                <label for="1°">1°</label>
+                <input type="radio" id="2°" name="classe" value="2°">
+                <label for="2°">2°</label>
+                <input type="radio" id="3°" name="classe" value="3°">
+                <label for="3°">3°</label>
+                <input type="radio" id="4°" name="classe" value="4°">
+                <label for="4°">4°</label>
+                <input type="radio" id="5°" name="classe" value="5°">
+                <label for="5°">5°</label>        
+            <p>Inserisci il/i corso/corsi che frequenti: </p>        
+                <input type="checkbox" id="Teatro" name="corso" value="Teatro">
+                <label for="Teatro">Teatro</label> <br>
+                <input type="checkbox" id="MGS" name="MGS" value="MGS">
+                <label for="MGS">MGS</label> <br>
+                <input type="checkbox" id="First Course" name="corso" value="First Course">
+                <label for="First Course">First Course</label> <br>
+                <input type="checkbox" id="Lettura" name="corso" value="Lettura">
+                <label for="Lettura">Lettura</label> <br>
+                <input type="checkbox" id="Dibattito" name="corso" value="Dibattito">
+                <label for="Dibattito">Dibattito</label> <br> <br>            
+            <label for="Data">Data di nascita: </label>
+                <input type="date" id="Data" name="nascita" value="Data"> <br> <br>
+            <label for="età">Inserisci la tua età: </label>
+                <input type="number" id="età" name="età" min="0" max="100"> <br> <br>
+            <label for="altezza">Inserisci la tua altezza in cm: </label>
+                <input type="number" id="altezza" name="altezza" min="150" max="200"> <br> <br>
+            <label for="peso">Inserisci il tuo peso in kg: </label>
+                <input type="number" id="peso" name="peso" min="10" max="80"> <br> <br>
+            <label for="media">Inserisci la tua media scolastica: </label>  
+                <input type="number" id="media" name="media" min="2" max="10"> <br> <br>
+            <label for="color">Inserisci il tuo colore preferito: </label>
+                <input type="color" id="color" name="color" value="#ffffff"> <br> <br>
+            <label for="numero">Gioco antistress: </label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="numero"> <br> <br>
+            <label for="numero">Gioco antistress: </label>
+                <input type="range" min="0" max="100" value="50" class="slider" id="numero"> <br> <br>
+            <label for="numero">Gioco antistress: </label>        
+                <input type="range" min="0" max="100" value="100" class="slider" id="numero"> <br> <br>
+            <label for="indirizzo">Inserisci il tuo indirizzo: </label> 
+                <select name="indirizzo" id="indirizzo">
+                    <option value="Informatico">Informatico</option>
+                    <option value="Meccatronico">Meccatronico</option>
+                    <option value="Energetico">Energetico</option>
+                    <option value="Elettronico">Elettronico</option>
+                    <option value="Liceo">Liceo</option>
+                </select> <br> <br>
+            <label for="paesi">Inserisci il tuo paese di nascita: </label>
+                <input list="paesi" name="paese" id="paese">
+                <datalist id="paesi">
+                    <option value="Albania">
+                    <option value="Belgio">
+                    <option value="Canada">
+                    <option value="Danimarca">
+                    <option value="Estonia">
+                </datalist> <br> <br>                
+            <label for="pensiero">Inserisci il tuo pensiero sulla scuola:</label>
+                <textarea id="pensiero" name="pensiero" rows="6" cols="60" placeholder="Penso che la scuola..."></textarea> <br> <br>
+            <label for="Pulsante">Premi il pulsante:</label>
+                <input type="button" id="Pulsante" value="Cliccami">                
+        </form>
+    </body>
+</html>

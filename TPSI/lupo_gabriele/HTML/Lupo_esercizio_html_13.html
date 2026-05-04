@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Esercizio_HTML_13</title>
+    </head>
+    <body>
+        <form>
+            <p>Inserisci il tuo nome e cognome: </p>
+                <table>
+                    <tr>
+                        <td><label for="idnome">Nome: </label></td>
+                        <td><input type="text" id="idnome" name="nome" placeholder="Nome" size="50"></td> 
+                    </tr>
+                    <tr>
+                        <td><label for="idcognome">Cognome: </label></td> 
+                        <td><input type="text" id="idcognome" name="cognome" placeholder="Cognome" size="50"></td>        
+                    </tr>                 
+                </table>
+            <p>Inserisci il tuo sesso: </p>       
+                <input type="radio" id="Maschio" name="sesso" value="Maschio">
+                <label for="Maschio">Maschio</label>
+                <input type="radio" id="Femmina" name="sesso" value="Femmina">
+                <label for="Femmina">Femmina</label> 
+            <br> <br>
+                <label for="Università">Ateneo: </label>
+                    <select name="Università" id="Università">
+                        <option value="Sapienza Università di Roma">Sapienza Università di Roma </option>
+                        <option value="LUMSA">LUMSA</option>
+                        <option value="Foro Italico">Foro Italico</option>
+                    </select>
+            <br> <br>
+                <label for="CAP">CAP: </label>
+                <input type="text" id="CAP" name="CAP" placeholder="CAP" size="5">
+            <p>Inserisci la tua professione: </p>
+                <input type="checkbox" id="Studente" name="professione" value="Studente">
+                <label for="Studente">Studente</label> <br>
+                <input type="checkbox" id="Lavoratore" name="professione" value="Lavoratore">
+                <label for="Lavoratore">Lavoratore</label>
+            <br> <br>
+            <label for="Descrizione del Lavoro">Inserisci una descrizione del tuo lavoro: </label> <br>
+            <textarea id="Descrizione del Lavoro" name="Descrizione" rows="4" cols="80" placeholder="Descrizione del tuo lavoro"></textarea>
+            <br> <br>
+            <input type="reset">
+            <input type="submit">                                  
+        </form>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF- Després8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio HTML 15 - Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <!-- Cognome -->
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" maxlength="40" required><br><br>
+
+        <!-- Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" maxlength="30" required><br><br>
+
+        <!-- Matricola -->
+        <label for="matricola">Matricola:</label>
+        <input type="text" id="matricola" name="matricola" maxlength="12" required><br><br>
+
+        <!-- Regione di residenza -->
+        <label for="regione">Regione di residenza:</label>
+        <select id="regione" name="regione" required>
+            <option value="">-- Seleziona una regione --</option>
+            <option value="abruzzo">Abruzzo</option>
+            <option value="basilicata">Basilicata</option>
+            <option value="calabria">Calabria</option>
+            <option value="campania">Campania</option>
+            <option value="emilia-romagna">Emilia-Romagna</option>
+            <option value="friuli-venezia-giulia">Friuli-Venezia Giulia</option>
+            <option value="lazio">Lazio</option>
+            <option value="liguria">Liguria</option>
+            <option value="lombardia">Lombardia</option>
+            <option value="marche">Marche</option>
+            <option value="molise">Molise</option>
+            <option value="piemonte">Piemonte</option>
+            <option value="puglia">Puglia</option>
+            <option value="sardegna">Sardegna</option>
+            <option value="sicilia">Sicilia</option>
+            <option value="toscana">Toscana</option>
+            <option value="trentino-alto-adige">Trentino-Alto Adige</option>
+            <option value="umbria">Umbria</option>
+            <option value="valle-d-aosta">Valle d'Aosta</option>
+            <option value="veneto">Veneto</option>
+        </select><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" maxlength="30" required><br><br>
+
+        <!-- Telefono -->
+        <label for="telefono">Telefono:</label>
+        <input type="text" id="telefono" name="telefono" maxlength="15" required><br><br>
+
+        <!-- Richieste particolari -->
+        <label for="richieste">Richieste particolari:</label><br>
+        <textarea id="richieste" name="richieste" rows="12" cols="60"></textarea><br><br>
+
+        <!-- Bottone di invio -->
+        <input type="submit" value="Invia">
+
+        <!-- Bottone di reset -->
+        <input type="reset" value="Resetta">
+    </form>
+</body>
+</html>
