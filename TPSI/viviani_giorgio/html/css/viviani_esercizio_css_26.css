@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.contenitore {
+    overflow: hidden; 
+    width: 430px;
+    padding: 20px;
+    background-color: purple;
+    
+}
+
+.riquadro {
+    width: 110px;
+    height: 110px;
+    float: right;
+    background-color: rgb(103, 193, 193);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+   
+}

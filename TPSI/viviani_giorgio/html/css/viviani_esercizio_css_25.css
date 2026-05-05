@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#num {
+ background-color: purple;
+ color: white;
+ width: 100px;
+ height: 100px;
+ text-align: left;
+ line-height: 30px;
+float: left;
+
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    float: left;
+}   

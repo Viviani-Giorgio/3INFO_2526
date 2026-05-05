@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.scacchiera {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.riga {
+    overflow: hidden;
+}
+
+.casella {
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+}
+
+.riga:nth-child(odd) .casella:nth-child(odd),
+.riga:nth-child(even) .casella:nth-child(even) {
+    background-color: white;
+    color: black;
+}
+
+.riga:nth-child(odd) .casella:nth-child(even),
+.riga:nth-child(even) .casella:nth-child(odd) {
+    background-color: black;
+    color: white;
+}

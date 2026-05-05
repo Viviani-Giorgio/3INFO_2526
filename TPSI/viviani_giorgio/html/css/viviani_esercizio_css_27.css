@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.box {
+    width: 180px;
+    height: 180px;
+    float: left;
+    background-color: purple;
+    color: white;
+    font-size: 28px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.testo-sopra {
+    font-size: 28px;
+
+}
+
+.testo-sotto {
+    font-size: 28px;
+    clear: left;
+    margin-top: 20px;
+}

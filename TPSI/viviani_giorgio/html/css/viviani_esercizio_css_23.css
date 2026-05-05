@@ -1,0 +1,25 @@
+.menu {
+    overflow: hidden;
+}
+
+.item {
+    float: left;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.item:hover {
+    background-color: white;
+    color: black;
+}
+
+.abt {
+    background-color: grey;
+    color: white;
+}
+
+.abt:hover {
+    background-color: white;
+    color: grey;
+}
