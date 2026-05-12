@@ -1,0 +1,15 @@
+#child {
+    width: 150px;
+    float : left;
+    border: 1px solid black;
+}
+
+.parents {
+    padding : 25px;
+    border: 20px solid rgba(70, 108, 170, 0.988);
+}
+
+p {
+    border: 1px solid black;
+    text-transform: bold;
+}
